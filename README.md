@@ -98,8 +98,8 @@ Refer to [contributing.md](/contributing.md).
 
 [MIT][mit] © [Paul Lucas][author]
 
-[stars-badge]: https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blueviolet
-[forks-badge]: https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blue
+[stars-badge]: https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square&color=green
+[forks-badge]: https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square
 [downloads-badge]: https://img.shields.io/github/downloads/paull10au/qsyd_InvocableEmailActions/total?style=flat-square
 [issues-badge]:	https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square
 
