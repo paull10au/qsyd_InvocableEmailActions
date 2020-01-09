@@ -77,7 +77,7 @@ Invocable actions, also known as dynamic actions, can be invoked from Flows, Pro
 ## Installation Instructions
 
 <a href="https://githubsfdeploy.herokuapp.com?owner=paull10au&repo=qsyd_InvocableEmailActions&ref=master">
-  <img align="right" alt="Deploy to Salesforce"
+  <img align="right" alt="Deploy to Salesforce" style="margin-right: 40%;"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
 
