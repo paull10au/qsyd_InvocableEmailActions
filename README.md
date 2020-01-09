@@ -1,10 +1,6 @@
+<img align="right" width="150" src="/images/q_logo.png">
 # Invocable Email Actions
-
-
-<h1 align="center">
-	<img width="50"	src="/images/q_logo.png"></br>
-	Timeline<br>     
-</h1>
+---
 
 <h4 align="center">
 	<a href="#overview">Overview</a> |
@@ -13,6 +9,33 @@
 	<a href="#faqs">FAQs</a> |
 	<a href="#contributing">Contribute</a>
 </h4>
+
+## Table of Contents
+
+<details>
+<summary>Click to expand</summary>
+
+- [About](#about)
+- [Install](#install)
+- [Usage](#usage)
+  * [API](#api)
+  * [Configuration Options](#configuration-options)
+- [CLI Usage](#cli-usage)
+- [Transforms](#transforms)
+  * [CODE](#code)
+  * [REMOTE](#remote)
+  * [TOC](#toc)
+- [Running Async transforms](#running-async-transforms)
+- [🔌 Third Party Plugins](#%F0%9F%94%8C-third-party-plugins)
+- [Adding Custom Transforms](#adding-custom-transforms)
+- [Plugin Example](#plugin-example)
+- [Other usage examples](#other-usage-examples)
+- [Custom Transform Demo](#custom-transform-demo)
+- [Prior Art](#prior-art)
+- [License](#license)
+
+</details>
+
 
 [create an anchor](#overview)
 
