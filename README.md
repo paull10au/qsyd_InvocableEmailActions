@@ -1,10 +1,7 @@
+<img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
+
 # Invocable Email Actions
-
-
-<h1 align="center">
-	<img width="100" src="/images/q_logo.png"></br>
-	Timeline<br>     
-</h1>
+---
 
 <h4 align="center">
 	<a href="#overview">Overview</a> |
@@ -14,9 +11,31 @@
 	<a href="#contributing">Contribute</a>
 </h4>
 
-[create an anchor](#overview)
+## Table of Contents
 
+<details>
+<summary>Click to expand</summary>
 
+- [About](#about)
+- [Install](#install)
+- [Usage](#usage)
+  * [API](#api)
+  * [Configuration Options](#configuration-options)
+- [CLI Usage](#cli-usage)
+- [Transforms](#transforms)
+  * [CODE](#code)
+  * [REMOTE](#remote)
+  * [TOC](#toc)
+- [Running Async transforms](#running-async-transforms)
+- [🔌 Third Party Plugins](#%F0%9F%94%8C-third-party-plugins)
+- [Adding Custom Transforms](#adding-custom-transforms)
+- [Plugin Example](#plugin-example)
+- [Other usage examples](#other-usage-examples)
+- [Custom Transform Demo](#custom-transform-demo)
+- [Prior Art](#prior-art)
+- [License](#license)
+
+</details>
 	
 <h3 align="center">
 	An interactive Lightning Web Component for the Salesforce platform<br><br>
@@ -34,7 +53,7 @@
   	</a>
   	<a>
     		<img alt="issues"
-		src="https://img.shields.io/github/issues-raw/dpaull10au/qsyd_InvocableEmailActions?style=flat-square">
+		src="https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square">
   	</a>
 </h3>
 
