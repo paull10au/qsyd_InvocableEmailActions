@@ -1,5 +1,7 @@
 <img align="right" width="150" src="/images/q_logo.png">
+
 # Invocable Email Actions
+
 ---
 
 <h4 align="center">
