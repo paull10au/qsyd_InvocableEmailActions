@@ -1,4 +1,4 @@
-<img align="right" width="130" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
+<img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
 
 # Invocable Email Actions 
 
@@ -65,7 +65,7 @@ Yes, labels can be translated using [Salesforce Translation Workbench](https://h
 
 ## Contributing
 
-Refer to [contributing.md](/contributing.md).
+Please refer to [contributing.md](/contributing.md) for guidelines.
 
 
 ## License
