@@ -1,7 +1,7 @@
 <img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
 
 # Invocable Email Actions
-#### Apex email actions available for Process Builder and Lightning Flow Builder.
+#### Apex email actions available for Process Builder and Lightning Flow Builder leveraging the <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm">SingleEmailMessage Class.</a>.
 	
 <h4 align="center">
 	<a href="#overview">Overview</a> |
@@ -37,7 +37,7 @@
 ---
 
 
-leveraging the <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm">SingleEmailMessage Class.</a>
+
 
 
 
