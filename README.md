@@ -1,7 +1,7 @@
 <img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
 
 # Invocable Email Actions
-
+---
 
 <h4 align="center">
 	<a href="#overview">Overview</a> |
@@ -36,11 +36,6 @@
 - [License](#license)
 
 </details>
-
-
-[create an anchor](#overview)
-
-
 	
 <h3 align="center">
 	An interactive Lightning Web Component for the Salesforce platform<br><br>
@@ -58,7 +53,7 @@
   	</a>
   	<a>
     		<img alt="issues"
-		src="https://img.shields.io/github/issues-raw/dpaull10au/qsyd_InvocableEmailActions?style=flat-square">
+		src="https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square">
   	</a>
 </h3>
 
