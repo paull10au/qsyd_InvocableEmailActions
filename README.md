@@ -1,4 +1,4 @@
-<img align="right" width="150" src="/images/q_logo.png">
+<img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
 
 # Invocable Email Actions
 
