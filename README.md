@@ -1,7 +1,7 @@
 <img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
 
 # Invocable Email Actions
----
+
 
 <h4 align="center">
 	<a href="#overview">Overview</a> |
@@ -10,6 +10,8 @@
 	<a href="#faqs">FAQs</a> |
 	<a href="#contributing">Contribute</a>
 </h4>
+
+---
 
 ## Table of Contents
 
