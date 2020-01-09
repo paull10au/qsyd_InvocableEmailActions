@@ -1,6 +1,8 @@
-<img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
+<img align="right" width="130" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
 
-# Invocable Email Actions - ![forks-badge] ![stars-badge] ![downloads-badge] ![issues-badge]
+# Invocable Email Actions 
+
+![forks-badge] ![stars-badge] ![downloads-badge] ![issues-badge]
 
 #### Apex email actions available for Process Builder and Lightning Flow Builder leveraging the <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm">SingleEmailMessage Class.</a>
 
@@ -90,6 +92,7 @@ Salesforce administrators have the aforementioned declarative tools at their dis
 2. Select the org type.
 3. Authenticate using OAuth.
 
+
 ## FAQs
 
 #### Does it work in Communities?
@@ -107,9 +110,14 @@ Yes, labels can be translated using [Salesforce Translation Workbench](https://h
 #### Others?
 
 
+## Contributing
+
+Refer to [contributing.md](/contributing.md).
+
+
 ## License
 
-[MIT][mit] © [Paull10au][author]
+[MIT][mit] © [Paul Lucas][author]
 
 
 [forks-badge]: https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blue
@@ -117,4 +125,4 @@ Yes, labels can be translated using [Salesforce Translation Workbench](https://h
 [downloads-badge]: https://img.shields.io/github/downloads/paull10au/qsyd_InvocableEmailActions/total?style=flat-square
 [issues-badge]:	https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square
 [mit]: http://opensource.org/licenses/MIT
-[author]: http://github.com/davidwells
+[author]: http://github.com/paull10au
