@@ -10,7 +10,7 @@
 	<a href="#faqs">FAQs</a> |
 	<a href="#contributing">Contribute</a>
 </h4>
-
+[![npm-version][npm-badge]][npm-link]
 <h3 align="center">
 	<a>
     		<img alt="forks on github"
@@ -66,7 +66,7 @@
 ## Overview
 Invocable actions, also known as dynamic actions, can be invoked from Flows, Processes and a common endpoint in the REST API. 
 
-Salesforce administrators have the aforementioned declarative tools at their disposal, but currently only have a primitive ability to send emails.
+Salesforce administrators have the aforementioned declarative tools at their disposal, but currently only have a primitive ability to send emails. These custom Apex actions provide the following capabilities:
 
 - **Available anywhere [@invocable methods](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_annotation_InvocableMethod.htm) can be invoked.** Examples are Lightning Flow Builder and Process Builder.
 - **Save as Activity.** Save a reference to the email as an activity feed item for a specified target object.
@@ -101,3 +101,17 @@ Yes, but with the following caveats/Yes/No/NA
 Yes, labels can be translated using [Salesforce Translation Workbench](https://help.salesforce.com/articleView?id=workbench_overview.htm&type=5)
 
 #### Others?
+
+
+## License
+
+[MIT][mit] © [Paul Lucas][author]
+
+[MIT][mit] © [DavidWells][author]
+
+
+[forks-badge]:	https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blue
+[npm-badge]:	https://img.shields.io/npm/v/markdown-magic.svg?style=flat-square
+[npm-link]: 	http://www.npmjs.com/package/markdown-magic
+[mit]:      	http://opensource.org/licenses/MIT
+[author]:   	http://github.com/davidwells
