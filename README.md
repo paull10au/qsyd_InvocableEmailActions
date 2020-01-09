@@ -36,12 +36,6 @@
 
 ---
 
-
-
-
-
-
-
 ## Table of Contents
 
 <details>
@@ -69,70 +63,93 @@
 </details>
 	
 
-
-A complete custom experience component. Created to allow users to view related records to a parent on an interactive timeline written with D3.js.
-
-- **Multi Object Support.** Plot related records to Lead, Account, Contact, Opportunity and Case.
-- **Multi Language Support.** All labels and error messages as translatable custom labels.
-- **Locale Support for Dates.** Date formats change based on your Salesforce locale setting.
-- **3rd Party JS.** Demonstrates 3rd Party JS and Apex imperative callouts to populate data in an interactive timeline.
-- **Responsive interface.** Uses flexipageRegionWidth to determine where in the page it is located.
-- **Minimises server roundtrips.** Uses Lightning Data Service for tooltips and falls back to queried data when needed.
-A complete custom experience component. Created to allow users to view related records to a parent on an interactive timeline written with D3.js.
-
-- **Multi Object Support.** Plot related records to Lead, Account, Contact, Opportunity and Case.
-- **Multi Language Support.** All labels and error messages as translatable custom labels.
-- **Locale Support for Dates.** Date formats change based on your Salesforce locale setting.
-- **3rd Party JS.** Demonstrates 3rd Party JS and Apex imperative callouts to populate data in an interactive timeline.
-- **Responsive interface.** Uses flexipageRegionWidth to determine where in the page it is located.
-- **Minimises server roundtrips.** Uses Lightning Data Service for tooltips and falls back to queried data when needed.
-A complete custom experience component. Created to allow users to view related records to a parent on an interactive timeline written with D3.js.
-
-- **Multi Object Support.** Plot related records to Lead, Account, Contact, Opportunity and Case.
-- **Multi Language Support.** All labels and error messages as translatable custom labels.
-- **Locale Support for Dates.** Date formats change based on your Salesforce locale setting.
-- **3rd Party JS.** Demonstrates 3rd Party JS and Apex imperative callouts to populate data in an interactive timeline.
-- **Responsive interface.** Uses flexipageRegionWidth to determine where in the page it is located.
-- **Minimises server roundtrips.** Uses Lightning Data Service for tooltips and falls back to queried data when needed.
-A complete custom experience component. Created to allow users to view related records to a parent on an interactive timeline written with D3.js.
-
-- **Multi Object Support.** Plot related records to Lead, Account, Contact, Opportunity and Case.
-- **Multi Language Support.** All labels and error messages as translatable custom labels.
-- **Locale Support for Dates.** Date formats change based on your Salesforce locale setting.
-- **3rd Party JS.** Demonstrates 3rd Party JS and Apex imperative callouts to populate data in an interactive timeline.
-- **Responsive interface.** Uses flexipageRegionWidth to determine where in the page it is located.
-- **Minimises server roundtrips.** Uses Lightning Data Service for tooltips and falls back to queried data when needed.
-A complete custom experience component. Created to allow users to view related records to a parent on an interactive timeline written with D3.js.
-
-- **Multi Object Support.** Plot related records to Lead, Account, Contact, Opportunity and Case.
-- **Multi Language Support.** All labels and error messages as translatable custom labels.
-- **Locale Support for Dates.** Date formats change based on your Salesforce locale setting.
-- **3rd Party JS.** Demonstrates 3rd Party JS and Apex imperative callouts to populate data in an interactive timeline.
-- **Responsive interface.** Uses flexipageRegionWidth to determine where in the page it is located.
-- **Minimises server roundtrips.** Uses Lightning Data Service for tooltips and falls back to queried data when needed.
-
 ## Overview
-A complete custom experience component. Created to allow users to view related records to a parent on an interactive timeline written with D3.js.
-
+Invocable actions, also known as dynamic actions, can be invoked from Flows, Processes and a common endpoint in the REST API.  
 - **Multi Object Support.** Plot related records to Lead, Account, Contact, Opportunity and Case.
 - **Multi Language Support.** All labels and error messages as translatable custom labels.
 - **Locale Support for Dates.** Date formats change based on your Salesforce locale setting.
 - **3rd Party JS.** Demonstrates 3rd Party JS and Apex imperative callouts to populate data in an interactive timeline.
 - **Responsive interface.** Uses flexipageRegionWidth to determine where in the page it is located.
 - **Minimises server roundtrips.** Uses Lightning Data Service for tooltips and falls back to queried data when needed.
+
+> This sample application is designed to run on Salesforce Platform. If you want to experience Lightning Web Components on any platform, please visit https://lwc.dev, and try out the Lightning Web Components sample application [LWC Recipes OSS](https://github.com/trailheadapps/lwc-recipes-oss).
+
+## Installation Instructions
+
+1. Set up your environment. Follow the steps in the [Quick Start: Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/) Trailhead project. The steps include:
+
+-   Enable Dev Hub in your Trailhead Playground
+-   Install Salesforce CLI
+-   Install Visual Studio Code
+-   Install the Visual Studio Code Salesforce extensions, including the Lightning Web Components extension
+
+2. If you haven't already done so, authenticate with your hub org and provide it with an alias (**myhuborg** in the command below):
+
+```
+sfdx force:auth:web:login -d -a myhuborg
+```
+
+3. Clone the timeline-lwc repository:
+
+```
+git clone https://github.com/deejay-hub/timeline-lwc
+cd timeline-lwc
+```
+
+4. Create a scratch org and provide it with an alias (**timeline-lwc** in the command below):
+
+```
+sfdx force:org:create -s -f config/project-scratch-def.json -a timeline-lwc
+```
+
+5. Push the app to your scratch org:
+
+```
+sfdx force:source:push
+```
+
+6. Assign the Timeline_User permission set to the default user:
+
+```
+sfdx force:user:permset:assign -n Timeline_User
+```
+
+7. Load sample data:
+
+```
+sfdx force:data:tree:import --plan data/timeline-plan.json
+```
+
+8. Open the scratch org:
+
+```
+sfdx force:org:open
+```
+
+9. Navigate to **Sales**, under **App Launcher**, select the **Sales** app.
+
+10. Find the contact **Jane Lo** and drill into her detailed information.
+
+11. Navigate to **Setup**, and select Edit Page
+
+12. Drag the timeline component into the page - found under custom components
+
+<p align="center">
+  <img alt="timeline app builder" src="images/appBuilderDemo.gif">
+</p>
 
 ## FAQs
 
-#### Does it support Communities?
-Yes, but with the following caveats/No/NA
+#### Does it work in Communities?
+Yes, but with the following caveats/Yes/No/NA
 
-#### Does it support Mobile?
-Yes, but with the following caveats/No/NA
+#### Does it work in Mobile?
+Yes, but with the following caveats/Yes/No/NA
 
-#### Does it support Person Accounts?
-Yes, but with the following caveats/No/NA
+#### Does it work with Person Accounts?
+Yes, but with the following caveats/Yes/No/NA
 
 #### Does it support Internationalisation (i18n)?
-Any custom labels can be translated using [Salesforce Translation Workbench](https://help.salesforce.com/articleView?id=workbench_overview.htm&type=5)
+Yes, labels can be translated using [Salesforce Translation Workbench](https://help.salesforce.com/articleView?id=workbench_overview.htm&type=5)
 
 #### Others?
