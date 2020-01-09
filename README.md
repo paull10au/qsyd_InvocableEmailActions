@@ -2,7 +2,7 @@
 
 
 <h1 align="center">
-	<img width="50"	src="/images/q_logo.png"></br>
+	<img width="100" src="/images/q_logo.png"></br>
 	Timeline<br>     
 </h1>
 
