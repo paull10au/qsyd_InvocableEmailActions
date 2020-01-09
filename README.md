@@ -64,26 +64,27 @@
 	
 
 ## Overview
-Invocable actions, also known as dynamic actions, can be invoked from Flows, Processes and a common endpoint in the REST API.  
-- **Multi Object Support.** Plot related records to Lead, Account, Contact, Opportunity and Case.
-- **Multi Language Support.** All labels and error messages as translatable custom labels.
-- **Locale Support for Dates.** Date formats change based on your Salesforce locale setting.
-- **3rd Party JS.** Demonstrates 3rd Party JS and Apex imperative callouts to populate data in an interactive timeline.
-- **Responsive interface.** Uses flexipageRegionWidth to determine where in the page it is located.
-- **Minimises server roundtrips.** Uses Lightning Data Service for tooltips and falls back to queried data when needed.
+Invocable actions, also known as dynamic actions, can be invoked from Flows, Processes and a common endpoint in the REST API. 
 
-> This sample application is designed to run on Salesforce Platform. If you want to experience Lightning Web Components on any platform, please visit https://lwc.dev, and try out the Lightning Web Components sample application [LWC Recipes OSS](https://github.com/trailheadapps/lwc-recipes-oss).
+Salesforce administrators have the aforementioned declarative tools at their disposal, but currently only have a primitive ability to send emails.
+
+- **Available anywhere [@invocable methods](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_annotation_InvocableMethod.htm) can be invoked.** Examples are Lightning Flow Builder and Process Builder.
+- **Save as Activity.** Save a reference to the email as an activity feed item for a specified target object.
+- **Flexible recipients.** In additional to "To" recipients, send carbon copies (CC) and/or blind carbon copies (BCC).
+- **Lightning Email Templates.** Upgrade from Classic Email Templates to the newer Lightning Email Templates which allows global headers and footers.
+- **Include attachments.**  Attach Document, ContentVersion, or Attachment items to the email.
+- **Other options.** Control [other](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm#apex_Messaging_SingleEmailMessage_constructors) email options.
+
 
 ## Installation Instructions
-
 <a style="margin-right: 40%;" href="https://githubsfdeploy.herokuapp.com?owner=paull10au&repo=qsyd_InvocableEmailActions&ref=master">
   <img align="right" alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
 
-1. Click the "Deploy to Salesforce" button
-2. Select your Org type
-3. Authenticate 
+1. Click the "Deploy to Salesforce" button.
+2. Select the org type.
+3. Authenticate using OAuth.
 
 ## FAQs
 
