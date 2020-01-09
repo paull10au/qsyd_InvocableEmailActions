@@ -76,67 +76,14 @@ Invocable actions, also known as dynamic actions, can be invoked from Flows, Pro
 
 ## Installation Instructions
 
-1. Set up your environment. Follow the steps in the [Quick Start: Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/) Trailhead project. The steps include:
+<a href="https://githubsfdeploy.herokuapp.com?owner=paull10au&repo=qsyd_InvocableEmailActions&ref=master">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
+</a>
 
--   Enable Dev Hub in your Trailhead Playground
--   Install Salesforce CLI
--   Install Visual Studio Code
--   Install the Visual Studio Code Salesforce extensions, including the Lightning Web Components extension
-
-2. If you haven't already done so, authenticate with your hub org and provide it with an alias (**myhuborg** in the command below):
-
-```
-sfdx force:auth:web:login -d -a myhuborg
-```
-
-3. Clone the timeline-lwc repository:
-
-```
-git clone https://github.com/deejay-hub/timeline-lwc
-cd timeline-lwc
-```
-
-4. Create a scratch org and provide it with an alias (**timeline-lwc** in the command below):
-
-```
-sfdx force:org:create -s -f config/project-scratch-def.json -a timeline-lwc
-```
-
-5. Push the app to your scratch org:
-
-```
-sfdx force:source:push
-```
-
-6. Assign the Timeline_User permission set to the default user:
-
-```
-sfdx force:user:permset:assign -n Timeline_User
-```
-
-7. Load sample data:
-
-```
-sfdx force:data:tree:import --plan data/timeline-plan.json
-```
-
-8. Open the scratch org:
-
-```
-sfdx force:org:open
-```
-
-9. Navigate to **Sales**, under **App Launcher**, select the **Sales** app.
-
-10. Find the contact **Jane Lo** and drill into her detailed information.
-
-11. Navigate to **Setup**, and select Edit Page
-
-12. Drag the timeline component into the page - found under custom components
-
-<p align="center">
-  <img alt="timeline app builder" src="images/appBuilderDemo.gif">
-</p>
+1. Click the "Deploy to Salesforce" button
+2. Select your Org type
+3. Authenticate 
 
 ## FAQs
 
