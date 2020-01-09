@@ -2,7 +2,7 @@
 
 # Invocable Email Actions 
 
-![forks-badge] ![stars-badge] ![downloads-badge] ![issues-badge]
+![stars-badge] ![forks-badge] ![downloads-badge] ![issues-badge]
 
 #### Apex email actions available for Process Builder and Lightning Flow Builder leveraging the <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm">SingleEmailMessage Class.</a>
 
@@ -14,27 +14,6 @@
 	<a href="#faqs">FAQs</a> |
 	<a href="#contributing">Contribute</a>
 </h4>
-
-<!---
-<h3 align="center">
-	<a>
-    		<img alt="forks on github"
-		src="https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blue">
-  	</a>
-  	<a>
-    		<img alt="stars on github"
-		src="https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square">
-  	</a>
-  	<a>
-    		<img alt="downloads on github"
-		src="https://img.shields.io/github/downloads/paull10au/qsyd_InvocableEmailActions/total?style=flat-square">
-  	</a>
-  	<a>
-    		<img alt="issues"
-		src="https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square">
-  	</a>
-</h3>
--->
 
 <p align="center">
   <img alt="Demo" src="images/demo.gif">
@@ -72,7 +51,7 @@
 ## Overview
 Invocable actions, also known as dynamic actions, can be invoked from Flows, Processes and a common endpoint in the REST API. 
 
-Salesforce administrators have the aforementioned declarative tools at their disposal, but currently only have a primitive ability to send emails. These custom Apex actions provide the following capabilities:
+Salesforce administrators have the aforementioned declarative tools at their disposal, but currently only have a primitive ability to send emails. These custom Apex email actions provide the following additional capabilities:
 
 - **Available anywhere [@invocable methods](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_annotation_InvocableMethod.htm) can be invoked.** Examples are Lightning Flow Builder and Process Builder.
 - **Save as Activity.** Save a reference to the email as an activity feed item for a specified target object.
@@ -119,10 +98,10 @@ Refer to [contributing.md](/contributing.md).
 
 [MIT][mit] © [Paul Lucas][author]
 
-
+[stars-badge]: https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blueviolet
 [forks-badge]: https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blue
-[stars-badge]: https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square
 [downloads-badge]: https://img.shields.io/github/downloads/paull10au/qsyd_InvocableEmailActions/total?style=flat-square
 [issues-badge]:	https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square
+
 [mit]: http://opensource.org/licenses/MIT
 [author]: http://github.com/paull10au
