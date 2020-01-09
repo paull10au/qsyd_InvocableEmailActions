@@ -5,7 +5,7 @@
 	
 <h4 align="center">
 	<a href="#overview">Overview</a> |
-	<a href="#installation-instructions">Install Me</a> |
+	<a href="#installation-instructions">Installation</a> |
 	<a href="#how-it-works">How it Works</a> |
 	<a href="#faqs">FAQs</a> |
 	<a href="#contributing">Contribute</a>
@@ -120,3 +120,19 @@ A complete custom experience component. Created to allow users to view related r
 - **3rd Party JS.** Demonstrates 3rd Party JS and Apex imperative callouts to populate data in an interactive timeline.
 - **Responsive interface.** Uses flexipageRegionWidth to determine where in the page it is located.
 - **Minimises server roundtrips.** Uses Lightning Data Service for tooltips and falls back to queried data when needed.
+
+## FAQs
+
+#### Does it support Communities?
+Yes, but with the following caveats/No/NA
+
+#### Does it support Mobile?
+Yes, but with the following caveats/No/NA
+
+#### Does it support Person Accounts?
+Yes, but with the following caveats/No/NA
+
+#### Does it support Internationalisation (i18n)?
+Any custom labels can be translated using [Salesforce Translation Workbench](https://help.salesforce.com/articleView?id=workbench_overview.htm&type=5)
+
+#### Others?
