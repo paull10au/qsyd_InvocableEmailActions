@@ -2,7 +2,6 @@
 
 # Invocable Email Actions
 
-
 <h4 align="center">
 	<a href="#overview">Overview</a> |
 	<a href="#installation-instructions">Install Me</a> |
@@ -10,6 +9,30 @@
 	<a href="#faqs">FAQs</a> |
 	<a href="#contributing">Contribute</a>
 </h4>
+	
+<h3 align="center">
+	Invocable email actions leveraging the [SingleEmailMessage Class](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm)<br><br>
+	<a>
+    		<img alt="forks on github"
+		src="https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blue">
+  	</a>
+  	<a>
+    		<img alt="stars on github"
+		src="https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square">
+  	</a>
+  	<a>
+    		<img alt="downloads on github"
+		src="https://img.shields.io/github/downloads/paull10au/qsyd_InvocableEmailActions/total?style=flat-square">
+  	</a>
+  	<a>
+    		<img alt="issues"
+		src="https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square">
+  	</a>
+</h3>
+
+<p align="center">
+  <img alt="timeline demo" src="images/heroDemo.gif">
+</p>
 
 ---
 
@@ -39,25 +62,7 @@
 
 </details>
 	
-<h3 align="center">
-	An interactive Lightning Web Component for the Salesforce platform<br><br>
-	<a>
-    		<img alt="forks on github"
-		src="https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blue">
-  	</a>
-  	<a>
-    		<img alt="stars on github"
-		src="https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square">
-  	</a>
-  	<a>
-    		<img alt="downloads on github"
-		src="https://img.shields.io/github/downloads/paull10au/qsyd_InvocableEmailActions/total?style=flat-square">
-  	</a>
-  	<a>
-    		<img alt="issues"
-		src="https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square">
-  	</a>
-</h3>
+
 
 A complete custom experience component. Created to allow users to view related records to a parent on an interactive timeline written with D3.js.
 
