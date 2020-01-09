@@ -1,8 +1,10 @@
 <img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
 
-# Invocable Email Actions
+# Invocable Email Actions - ![forks-badge] ![stars-badge] ![downloads-badge] ![issues-badge]
+
 #### Apex email actions available for Process Builder and Lightning Flow Builder leveraging the <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm">SingleEmailMessage Class.</a>
-	
+
+		
 <h4 align="center">
 	<a href="#overview">Overview</a> |
 	<a href="#installation-instructions">Installation</a> |
@@ -10,7 +12,8 @@
 	<a href="#faqs">FAQs</a> |
 	<a href="#contributing">Contribute</a>
 </h4>
-[![npm-version][npm-badge]][npm-link]
+
+<!---
 <h3 align="center">
 	<a>
     		<img alt="forks on github"
@@ -29,6 +32,7 @@
 		src="https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square">
   	</a>
 </h3>
+-->
 
 <p align="center">
   <img alt="Demo" src="images/demo.gif">
@@ -105,13 +109,12 @@ Yes, labels can be translated using [Salesforce Translation Workbench](https://h
 
 ## License
 
-[MIT][mit] © [Paul Lucas][author]
-
-[MIT][mit] © [DavidWells][author]
+[MIT][mit] © [Paull10au][author]
 
 
-[forks-badge]:	https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blue
-[npm-badge]:	https://img.shields.io/npm/v/markdown-magic.svg?style=flat-square
-[npm-link]: 	http://www.npmjs.com/package/markdown-magic
-[mit]:      	http://opensource.org/licenses/MIT
-[author]:   	http://github.com/davidwells
+[forks-badge]: https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blue
+[stars-badge]: https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square
+[downloads-badge]: https://img.shields.io/github/downloads/paull10au/qsyd_InvocableEmailActions/total?style=flat-square
+[issues-badge]:	https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square
+[mit]: http://opensource.org/licenses/MIT
+[author]: http://github.com/davidwells
