@@ -9,9 +9,10 @@
 	<a href="#faqs">FAQs</a> |
 	<a href="#contributing">Contribute</a>
 </h4>
-	
+
 <h3 align="center">
-	Invocable email actions leveraging the [SingleEmailMessage Class](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm)<br><br>
+	Invocable email actions leveraging the <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm">SingleEmailMessage Class.</a>
+	<br><br>
 	<a>
     		<img alt="forks on github"
 		src="https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square&logoColor=blue">
@@ -31,10 +32,12 @@
 </h3>
 
 <p align="center">
-  <img alt="timeline demo" src="images/heroDemo.gif">
+  <img alt="Demo" src="images/demo.gif">
 </p>
 
 ---
+
+
 
 ## Table of Contents
 
