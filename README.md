@@ -79,7 +79,7 @@ If you would like to join these awesome people, please refer to [contributing.md
 Special thanks to:
 
 - Q Branch Sydney for your continued support.
-- The myriad of Solution Engineers that have requested for, and validated these actions. 
+- The myriad of Solution Engineers that have requested for, used and provided feedback on this project. 
 
 
 ## License
