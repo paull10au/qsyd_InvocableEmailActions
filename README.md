@@ -1,6 +1,6 @@
 <img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
 
-# Invocable Email Actions ![license-badge]
+# Invocable Email Actions
 
 ![stars-shield] ![forks-shield] ![downloads-shield] ![issues-shield]
 
@@ -72,7 +72,7 @@ Yes, labels can be translated using [Salesforce Translation Workbench](https://h
 
 Please refer to [contributing.md](/contributing.md) for guidelines.
 
-See also the list of [contributors](https://github.com/douglascayers-org/sfdx-mass-action-scheduler/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/paull10au/qsyd_InvocableEmailActions/contributors) who participated in this project.
 
 ## Acknowledgements
 
@@ -84,7 +84,8 @@ Special thanks to:
 
 ## License
 
-![license-shield][license-url] Copyright © 2017-2019 [Paul Lucas][author-url]
+[![License][license-shield]][license-url] Copyright © 2017-2019 [Paul Lucas][author-url]
+
 
 <!--- Links and Images -->
 
