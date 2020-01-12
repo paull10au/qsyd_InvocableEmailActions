@@ -2,7 +2,7 @@
 
 # Invocable Email Actions
 
-![stars-shield] ![forks-shield] ![downloads-shield] ![issues-shield]
+[![Stars][stars-shield]][author-url] ![forks-shield] ![downloads-shield] ![issues-shield]
 
 #### Have more control when declaratively sending emails. Apex email actions available for Process Builder and Lightning Flow Builder leveraging the <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm">SingleEmailMessage Class.</a>
 
@@ -88,14 +88,17 @@ Special thanks to:
 
 
 <!--- Links and Images -->
+[stars-shield]: https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square&color=green
+[forks-shield]: https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square
 
 [version-shield]: https://img.shields.io/github/tag/paull10au/qsyd_InvocableEmailActions?label=release&color=green
 [version-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Release-Notes
 
-[stars-shield]: https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square&color=green
-[forks-shield]: https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square
 [downloads-shield]: https://img.shields.io/github/downloads/paull10au/qsyd_InvocableEmailActions/total?style=flat-square
+[downloads-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/releases
+
 [issues-shield]: https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square&color=violet
+[issues-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/issues
 
 [license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: http://opensource.org/licenses/MIT
