@@ -84,7 +84,7 @@ Special thanks to:
 
 ## License
 
-[![License][license-shield]][license-url] Copyright © 2017-2019 [Paul Lucas][author-url]
+[![License][license-shield]][license-url] Copyright © 2020 [Paul Lucas][author-url]
 
 
 <!--- Images -->
@@ -102,4 +102,4 @@ Special thanks to:
 [issues-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/issues
 [license-url]: http://opensource.org/licenses/MIT
 [author-url]: http://github.com/paull10au
-[contributors-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/contributors)
+[contributors-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/contributors
