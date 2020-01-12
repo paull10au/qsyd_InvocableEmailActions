@@ -1,6 +1,6 @@
 <img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
 
-# Invocable Email Actions 
+# Invocable Email Actions ![license-badge]
 
 ![stars-badge] ![forks-badge] ![downloads-badge] ![issues-badge]
 
@@ -85,10 +85,12 @@ Special thanks to:
 
 [MIT][mit] © [Paul Lucas][author]
 
+<!--- Badges -->
 [stars-badge]: https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square&color=green
 [forks-badge]: https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square
 [downloads-badge]: https://img.shields.io/github/downloads/paull10au/qsyd_InvocableEmailActions/total?style=flat-square
-[issues-badge]:	https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square
+[issues-badge]:	https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square&color=violet
+[license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 
 [mit]: http://opensource.org/licenses/MIT
 [author]: http://github.com/paull10au
