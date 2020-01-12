@@ -12,6 +12,7 @@
 	<a href="#installation-instructions">Installation</a> |
 	<a href="#how-it-works">How it Works</a> |
 	<a href="#faqs">FAQs</a> |
+	<a href="#acknowledgements">Acknowledgements</a> 🥰 |
 	<a href="#contributing">Contribute</a>
 </h4>
 
@@ -66,6 +67,14 @@ Yes, labels can be translated using [Salesforce Translation Workbench](https://h
 ## Contributing
 
 Please refer to [contributing.md](/contributing.md) for guidelines.
+
+
+## Acknowledgements
+
+Special thanks to:
+
+- Q Branch Sydney for your continues support
+- All the Solution Engineers that have requested and validated these actions. 
 
 
 ## License
