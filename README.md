@@ -12,8 +12,8 @@
 	<a href="#installation-instructions">Installation</a> |
 	<a href="#how-it-works">How it Works</a> |
 	<a href="#faqs">FAQs</a> |
-	<a href="#acknowledgements">Acknowledgements</a> 🥰 |
-	<a href="#contributing">Contribute</a>
+	<a href="#contributing">Contribute</a> |
+	<a href="#acknowledgements">Acknowledgements</a> 🥰
 </h4>
 
 <p align="center">
@@ -47,6 +47,10 @@ Salesforce administrators have the aforementioned declarative tools at their dis
 3. Authenticate using OAuth.
 
 
+## How it Works
+
+
+
 ## FAQs
 
 #### Does it work in Communities?
@@ -64,7 +68,7 @@ Yes, labels can be translated using [Salesforce Translation Workbench](https://h
 #### Others?
 
 
-## Contributing
+## Contribute
 
 Please refer to [contributing.md](/contributing.md) for guidelines.
 
@@ -73,8 +77,8 @@ Please refer to [contributing.md](/contributing.md) for guidelines.
 
 Special thanks to:
 
-- Q Branch Sydney for your continues support
-- All the Solution Engineers that have requested and validated these actions. 
+- Q Branch Sydney for your continued support.
+- The myriad of Solution Engineers that have requested for, and validated these actions. 
 
 
 ## License
