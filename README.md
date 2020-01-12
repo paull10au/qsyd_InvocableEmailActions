@@ -83,7 +83,7 @@ Special thanks to:
 
 ## License
 
-[MIT][mit] © [Paul Lucas][author]
+![license-badge] © [Paul Lucas][author]
 
 <!--- Badges -->
 [stars-badge]: https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square&color=green
