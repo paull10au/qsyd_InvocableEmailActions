@@ -2,7 +2,7 @@
 
 # Invocable Email Actions ![license-badge]
 
-![stars-badge] ![forks-badge] ![downloads-badge] ![issues-badge]
+![stars-shield] ![forks-shield] ![downloads-shield] ![issues-shield]
 
 #### Have more control when declaratively sending emails. Apex email actions available for Process Builder and Lightning Flow Builder leveraging the <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm">SingleEmailMessage Class.</a>
 
@@ -72,6 +72,7 @@ Yes, labels can be translated using [Salesforce Translation Workbench](https://h
 
 Please refer to [contributing.md](/contributing.md) for guidelines.
 
+See also the list of [contributors](https://github.com/douglascayers-org/sfdx-mass-action-scheduler/contributors) who participated in this project.
 
 ## Acknowledgements
 
@@ -83,14 +84,20 @@ Special thanks to:
 
 ## License
 
-![license-badge] © [Paul Lucas][author]
+![license-shield][license-url] Copyright © 2017-2019 [Paul Lucas][author-url]
 
-<!--- Badges -->
-[stars-badge]: https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square&color=green
-[forks-badge]: https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square
-[downloads-badge]: https://img.shields.io/github/downloads/paull10au/qsyd_InvocableEmailActions/total?style=flat-square
-[issues-badge]:	https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square&color=violet
-[license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
+<!--- Links and Images -->
 
-[mit]: http://opensource.org/licenses/MIT
-[author]: http://github.com/paull10au
+[version-shield]: https://img.shields.io/github/tag/paull10au/qsyd_InvocableEmailActions?label=release&color=green
+[version-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Release-Notes
+
+[stars-shield]: https://img.shields.io/github/stars/paull10au/qsyd_InvocableEmailActions?style=flat-square&color=green
+[forks-shield]: https://img.shields.io/github/forks/paull10au/qsyd_InvocableEmailActions?style=flat-square
+[downloads-shield]: https://img.shields.io/github/downloads/paull10au/qsyd_InvocableEmailActions/total?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues-raw/paull10au/qsyd_InvocableEmailActions?style=flat-square&color=violet
+
+[license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
+[license-url]: http://opensource.org/licenses/MIT
+
+[author-url]: http://github.com/paull10au
+[contributors-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/contributors)
