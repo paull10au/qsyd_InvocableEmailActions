@@ -1,3 +1,7 @@
+<div>
+	<img align="right" width="150" src="https://qbranch-sydney.s3-ap-southeast-2.amazonaws.com/qbranch_logo.gif">
+</div>
+
 # Q Branch Code of Conduct
 
 ## Our Pledge
