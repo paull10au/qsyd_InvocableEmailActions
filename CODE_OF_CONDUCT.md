@@ -1,10 +1,4 @@
-# Salesforce Open Source Community Code of Conduct
-
-## About the Code of Conduct
-
-All questions and reports of abusive, harassing, or otherwise unacceptable behavior
-in a Salesforce open-source project may be reported by contacting the Salesforce
-Open Source Conduct Committee at ossconduct@salesforce.com.
+# Q Branch Code of Conduct
 
 ## Our Pledge
 
@@ -63,7 +57,7 @@ further defined and clarified by project maintainers.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the Salesforce Open Source Conduct Committee 
-at ossconduct@salesforce.com. All complaints will be reviewed and investigated 
+at qbranchconduct@salesforce.com. All complaints will be reviewed and investigated 
 and will result in a response that is deemed necessary and appropriate to the 
 circumstances. The committee is obligated to maintain confidentiality with 
 regard to the reporter of an incident. Further details of specific enforcement 
