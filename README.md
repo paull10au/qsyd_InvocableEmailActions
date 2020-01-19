@@ -12,8 +12,8 @@
 
 		
 <h4 align="center">
-	<a href="#overview">Overview</a> |
-	<a href="#installation-instructions">Installation</a> |
+	<a href="#about">About</a> |
+	<a href="#installation">Installation</a> |
 	<a href="#how-it-works">How it Works</a> |
 	<a href="#faqs">FAQs</a> |
 	<a href="#contributing">Contribute</a> |
@@ -27,7 +27,7 @@
 ---
 	
 
-## Overview
+## About
 Invocable actions, also known as dynamic actions, can be invoked from Flows, Processes and a common endpoint in the REST API. 
 
 Salesforce administrators have the aforementioned declarative tools at their disposal, but currently only have a primitive ability to send emails. These custom Apex email actions provide the following additional capabilities:
@@ -40,7 +40,7 @@ Salesforce administrators have the aforementioned declarative tools at their dis
 - **Other options.** Control [other](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm#apex_Messaging_SingleEmailMessage_constructors) email options.
 
 
-## Installation Instructions
+## Installation
 <a style="margin-right: 40%;" href="https://githubsfdeploy.herokuapp.com?owner=paull10au&repo=qsyd_InvocableEmailActions&ref=master">
   <img align="right" alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
