@@ -16,7 +16,7 @@
 	<a href="#installation">Installation</a> |
 	<a href="#usage">Usage</a> |
 	<a href="#faqs">FAQs</a> |
-	<a href="#contributing">Contribute</a> |
+	<a href="#contributing">Contributing</a> |
 	<a href="#acknowledgements">Acknowledgements</a> 🥰
 </h4>
 
