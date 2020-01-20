@@ -70,16 +70,16 @@ Deploy the actions:
 ## [FAQs][wiki-faqs-url]
 
 #### Does it work in Communities?
-Yes, but with the following caveats/Yes/No/NA
+> Yes, but with the following caveats/Yes/No/NA
 
 #### Does it work in Mobile?
-Yes, but with the following caveats/Yes/No/NA
+> Yes, but with the following caveats/Yes/No/NA
 
 #### Does it work with Person Accounts?
-Yes, but with the following caveats/Yes/No/NA
+> Yes, but with the following caveats/Yes/No/NA
 
 #### Does it support Internationalisation (i18n)?
-Yes, labels can be translated using [Salesforce Translation Workbench](https://help.salesforce.com/articleView?id=workbench_overview.htm&type=5)
+> Yes, labels can be translated using [Salesforce Translation Workbench](https://help.salesforce.com/articleView?id=workbench_overview.htm&type=5)
 
 #### Others?
 
