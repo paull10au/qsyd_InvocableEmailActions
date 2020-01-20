@@ -27,7 +27,7 @@
 ---
 	
 
-## [Features](https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Features)
+## [Features][wiki-features-url]
 Invocable actions, also known as dynamic actions, can be invoked from Flows, Processes and a common endpoint in the REST API. 
 
 Salesforce administrators have the aforementioned declarative tools at their disposal, but currently only have a primitive ability to send emails. These custom Apex email actions provide the following additional capabilities:
@@ -42,14 +42,14 @@ Salesforce administrators have the aforementioned declarative tools at their dis
 
 ## Getting Started
 
-### Prerequisites
+### [Prerequisites][wiki-prerequisites-url]
 
 There are a few items you need to setup before installing:
 
 1. You will need to [Enable Lightning Experience](https://trailhead.salesforce.com/en/content/learn/modules/lex_migration_introduction/lex_migration_introduction_administration) if you plan on using [Lightning Enhanced Letterheads and Email Templates](https://trailhead.salesforce.com/en/content/learn/projects/customize-an-org-to-support-a-new-business-unit/configure-an-email-letterhead-and-template).
 2. You will need to [Enable My Domain](https://trailhead.salesforce.com/en/content/learn/modules/identity_login/identity_login_my_domain) if you plan on using [Lightning Enhanced Letterheads and Email Templates](https://trailhead.salesforce.com/en/content/learn/projects/customize-an-org-to-support-a-new-business-unit/configure-an-email-letterhead-and-template).
 
-### Install
+### [Install][wiki-install-url]
 
 Deploy the actions:
 
@@ -64,11 +64,10 @@ Deploy the actions:
 4. Deploy the code.
 
 
-## Usage
+## [Usage][wiki-usage-url]
 
 
-
-## FAQs
+## [FAQs][wiki-faqs-url]
 
 #### Does it work in Communities?
 Yes, but with the following caveats/Yes/No/NA
@@ -120,3 +119,10 @@ Special thanks to:
 [license-url]: http://opensource.org/licenses/MIT
 [author-url]: http://github.com/paull10au
 [contributors-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/contributors
+
+[wiki-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki
+[wiki-features-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Features
+[wiki-prerequisites-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Prerequisites
+[wiki-install-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Install
+[wiki-usage-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Usage
+[wiki-faqs-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Frequently-Asked-Questions
