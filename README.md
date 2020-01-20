@@ -60,7 +60,8 @@ Install the actions:
 
 1. Click the "Deploy to Salesforce" button.
 2. Select the Org Type (Production / Sandbox).
-3. Authenticate using OAuth.
+3. Login to your Org.
+4. Deploy the code.
 
 
 ## Usage
