@@ -12,7 +12,7 @@
 
 		
 <h4 align="center">
-	<a href="#about">About</a> |
+	<a href="#features">Features</a> |
 	<a href="#installation">Installation</a> |
 	<a href="#how-it-works">How it Works</a> |
 	<a href="#faqs">FAQs</a> |
@@ -27,7 +27,7 @@
 ---
 	
 
-## About
+## Features
 Invocable actions, also known as dynamic actions, can be invoked from Flows, Processes and a common endpoint in the REST API. 
 
 Salesforce administrators have the aforementioned declarative tools at their disposal, but currently only have a primitive ability to send emails. These custom Apex email actions provide the following additional capabilities:
