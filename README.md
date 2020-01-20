@@ -49,7 +49,7 @@ There are a few items you need to setup before installing:
 1. You will need to [Enable Lightning Experience](https://trailhead.salesforce.com/en/content/learn/modules/lex_migration_introduction/lex_migration_introduction_administration) if you plan on using [Lightning Enhanced Letterheads and Email Templates](https://trailhead.salesforce.com/en/content/learn/projects/customize-an-org-to-support-a-new-business-unit/configure-an-email-letterhead-and-template).
 2. You will need to [Enable My Domain](https://trailhead.salesforce.com/en/content/learn/modules/identity_login/identity_login_my_domain) if you plan on using [Lightning Enhanced Letterheads and Email Templates](https://trailhead.salesforce.com/en/content/learn/projects/customize-an-org-to-support-a-new-business-unit/configure-an-email-letterhead-and-template).
 
-### Deploy
+### Install
 
 Deploy the actions:
 
