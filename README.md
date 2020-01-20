@@ -13,6 +13,7 @@
 		
 <h4 align="center">
 	<a href="#features">Features</a> |
+	<a href="#prerequisites">Prerequisites</a> |
 	<a href="#installation">Installation</a> |
 	<a href="#how-it-works">How it Works</a> |
 	<a href="#faqs">FAQs</a> |
@@ -39,6 +40,13 @@ Salesforce administrators have the aforementioned declarative tools at their dis
 - **Include attachments.**  Attach Document, ContentVersion, or Attachment items to the email.
 - **Other options.** Control [other](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm#apex_Messaging_SingleEmailMessage_constructors) email options.
 
+
+## Prerequisites
+
+There are a few items you need to setup before installing and using this app.
+
+1. You will need to [Enable Lightning Experience](https://trailhead.salesforce.com/en/content/learn/modules/lex_migration_introduction/lex_migration_introduction_administration) because we are using Lightning Email Templates.
+2. You will need to [Enable My Domain](https://trailhead.salesforce.com/en/content/learn/modules/identity_login/identity_login_my_domain) because we are using Lightning Email Templates.
 
 ## Installation
 <a style="margin-right: 40%;" href="https://githubsfdeploy.herokuapp.com?owner=paull10au&repo=qsyd_InvocableEmailActions&ref=master">
