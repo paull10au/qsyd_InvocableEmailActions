@@ -43,19 +43,22 @@ Salesforce administrators have the aforementioned declarative tools at their dis
 
 ## Prerequisites
 
-There are a few items you need to setup before installing and using this app.
+There are a few items you need to setup before installing:
 
 1. You will need to [Enable Lightning Experience](https://trailhead.salesforce.com/en/content/learn/modules/lex_migration_introduction/lex_migration_introduction_administration) because we are using Lightning Email Templates.
 2. You will need to [Enable My Domain](https://trailhead.salesforce.com/en/content/learn/modules/identity_login/identity_login_my_domain) because we are using Lightning Email Templates.
 
 ## Installation
+
+Install the actions:
+
 <a style="margin-right: 40%;" href="https://githubsfdeploy.herokuapp.com?owner=paull10au&repo=qsyd_InvocableEmailActions&ref=master">
   <img align="right" alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
 
 1. Click the "Deploy to Salesforce" button.
-2. Select the org type.
+2. Select the Org Type [Production / Sandbox].
 3. Authenticate using OAuth.
 
 
