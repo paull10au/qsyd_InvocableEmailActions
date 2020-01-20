@@ -13,7 +13,6 @@
 		
 <h4 align="center">
 	<a href="#features">Features</a> |
-	<a href="#prerequisites">Prerequisites</a> |
 	<a href="#installation">Installation</a> |
 	<a href="#usage">Usage</a> |
 	<a href="#faqs">FAQs</a> |
@@ -41,14 +40,16 @@ Salesforce administrators have the aforementioned declarative tools at their dis
 - **Other options.** Control [other](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm#apex_Messaging_SingleEmailMessage_constructors) email options.
 
 
-## Prerequisites
+## Installation
+
+### Prerequisites
 
 There are a few items you need to setup before installing:
 
 1. You will need to [Enable Lightning Experience](https://trailhead.salesforce.com/en/content/learn/modules/lex_migration_introduction/lex_migration_introduction_administration) because we are using [Lightning Enhanced Letterheads and Email Templates](https://trailhead.salesforce.com/en/content/learn/projects/customize-an-org-to-support-a-new-business-unit/configure-an-email-letterhead-and-template).
 2. You will need to [Enable My Domain](https://trailhead.salesforce.com/en/content/learn/modules/identity_login/identity_login_my_domain) because we are using [Lightning Enhanced Letterheads and Email Templates](https://trailhead.salesforce.com/en/content/learn/projects/customize-an-org-to-support-a-new-business-unit/configure-an-email-letterhead-and-template).
 
-## Installation
+### Deploy
 
 Install the actions:
 
