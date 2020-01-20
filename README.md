@@ -13,7 +13,7 @@
 		
 <h4 align="center">
 	<a href="#features">Features</a> |
-	<a href="#installation">Installation</a> |
+	<a href="#getting-started">Getting Started</a> |
 	<a href="#usage">Usage</a> |
 	<a href="#faqs">FAQs</a> |
 	<a href="#contributing">Contributing</a> |
@@ -40,7 +40,7 @@ Salesforce administrators have the aforementioned declarative tools at their dis
 - **Other options.** Control [other](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm#apex_Messaging_SingleEmailMessage_constructors) email options.
 
 
-## Installation
+## Getting Started
 
 ### Prerequisites
 
