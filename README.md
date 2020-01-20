@@ -85,7 +85,7 @@ Yes, labels can be translated using [Salesforce Translation Workbench](https://h
 #### Others?
 
 
-## Contribute
+## Contributing
 
 See the list of [Contributors][contributors-url] who participated in this project.
 
