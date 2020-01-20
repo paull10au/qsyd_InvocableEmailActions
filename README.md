@@ -58,7 +58,7 @@ Install the actions:
 </a>
 
 1. Click the "Deploy to Salesforce" button.
-2. Select the Org Type [Production / Sandbox].
+2. Select the Org Type (Production / Sandbox).
 3. Authenticate using OAuth.
 
 
