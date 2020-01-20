@@ -16,6 +16,7 @@
 	<a href="#getting-started">Getting Started</a> |
 	<a href="#usage">Usage</a> |
 	<a href="#faqs">FAQs</a> |
+	<a href="#documentation">Documentation</a> |
 	<a href="#contributing">Contributing</a> |
 	<a href="#acknowledgements">Acknowledgements</a> 🥰
 </h4>
@@ -40,7 +41,7 @@ Salesforce administrators have the aforementioned declarative tools at their dis
 - **Other options.** Control [other](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm#apex_Messaging_SingleEmailMessage_constructors) email options.
 
 
-## Getting Started
+## [Getting Started][wiki-getting-started-url]
 
 ### [Prerequisites][wiki-prerequisites-url]
 
@@ -65,6 +66,13 @@ Deploy the actions:
 
 
 ## [Usage][wiki-usage-url]
+
+
+## [Documentation][wiki-url]
+
+Read the [wiki][wiki-url] for documentation on Invocable Email Actions.
+
+Read the [FAQs][wiki-faqs-url] to troubleshoot common technical issues.
 
 
 ## [FAQs][wiki-faqs-url]
@@ -122,6 +130,7 @@ Special thanks to:
 
 [wiki-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki
 [wiki-features-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Features
+[wiki-getting-started-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Getting-Started
 [wiki-prerequisites-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Prerequisites
 [wiki-install-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Install
 [wiki-usage-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Usage
