@@ -67,6 +67,14 @@ Deploy the actions:
 
 ## [Usage][wiki-usage-url]
 
+There are 2 actions included
+
+- QSyd - Invocable Email Action
+- QSyd - Invocable Email Template Action
+
+The latter, intentially opinionated for use with Lightning Email Templates.
+
+### QSyd - Invocable Email Action
 
 ## [Documentation][wiki-url]
 
@@ -135,3 +143,5 @@ Special thanks to:
 [wiki-install-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Install
 [wiki-usage-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Usage
 [wiki-faqs-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Frequently-Asked-Questions
+
+[github-qsyd_InvocableEmailTemplateAction-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/src/classes/qsyd_InvocableEmailTemplateAction.cls
