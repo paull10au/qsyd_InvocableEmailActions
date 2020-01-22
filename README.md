@@ -72,15 +72,80 @@ There are 2 actions included
 - QSyd - Invocable Email Action
 - QSyd - Invocable Email Template Action
 
-The latter, intentially opinionated for use with Lightning Email Templates.
+The latter is intentionally opinionated for exclusive use with a Lightning Email Template. The premise behind these actions is to expose the full capability of Salesforce emails, and as such the api is deliberatly comprehensive.
 
-### QSyd - Invocable Email Action
+### [QSyd - Invocable Email Action][github-qsyd_InvocableEmailAction-url]
+
+An example programmatic usage:
+
+```
+private static void given_requiredEmailParametersAreProvided_when_anEmailIsInstantiated_then_anEmailIsSent() {
+        qsyd_InvocableEmailAction.InvocableEmailParam param = new qsyd_InvocableEmailAction.InvocableEmailParam();
+        List<qsyd_InvocableEmailAction.InvocableEmailParam> params = new List<qsyd_InvocableEmailAction.InvocableEmailParam>();
+
+        initialiseSetupTestData();
+
+        Test.startTest();
+
+        param.toAddress = 'plucas@salesforce.com';
+        param.ccAddress = 'test_email@gmail.com';
+        param.bccAddress = 'test_email@gmail.com';
+        param.throwExceptionForSendErrors = true;
+        param.subject = 'Email Subject';
+        param.bodyPlainText = 'Plain text body';
+        param.bodyHtml = '<html><body><strong>Rich text body</strong></body></html>';
+        param.charSet = 'utf-8';
+        param.attachmentIds = CONTENTVERSION_EXAMPLES;
+        param.whatId = CASE_EXAMPLE;
+        param.parentMessageIds = INREPLYTO_EXAMPLE;
+        param.orgWideEmailAddress = '';
+        param.emailOptOutPolicy = 'FILTER';
+        param.saveAsActivity = true;
+        params.add(param);
+
+        List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailAction.sendEmail(params);
+        Integer invocations = Limits.getEmailInvocations();
+
+        // Email was sent
+        System.assertEquals(1, invocations);
+
+        Test.stopTest();
+    }
+```
+
+### [QSyd - Invocable Email Template Action][github-qsyd_InvocableEmailTemplateAction-url]
+
+An example programmatic usage:
+```
+   @IsTest
+    private static void given_requiredEmailParametersAreProvided_when_anEmailIsInstantiated_then_anEmailIsSent() {
+        qsyd_InvocableEmailTemplateAction.InvocableEmailParam param = new qsyd_InvocableEmailTemplateAction.InvocableEmailParam();
+        List<qsyd_InvocableEmailTemplateAction.InvocableEmailParam> params = new List<qsyd_InvocableEmailTemplateAction.InvocableEmailParam>();
+
+        initialiseSetupTestData();
+
+        Test.startTest();
+
+        param.toAddress = 'plucas@salesforce.com';
+        param.emailTemplate = 'Test Template';
+        param.targetObjectId = CONTACT_EXAMPLE;
+        params.add(param);
+
+        List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
+        Integer invocations = Limits.getEmailInvocations();
+
+        // Assert an email was sent
+        System.assertEquals(1, invocations);
+
+        Test.stopTest();
+    }
+```
 
 ## [Documentation][wiki-url]
 
 Read the [wiki][wiki-url] for documentation on Invocable Email Actions.
 
-Read the [FAQs][wiki-faqs-url] to troubleshoot common technical issues.
+Read the [FAQs][wiki-faqs-url] answer common questions.
 
 
 ## [FAQs][wiki-faqs-url]
@@ -144,4 +209,5 @@ Special thanks to:
 [wiki-usage-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Usage
 [wiki-faqs-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/wiki/Frequently-Asked-Questions
 
+[github-qsyd_InvocableEmailAction-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/src/classes/qsyd_InvocableEmailAction.cls
 [github-qsyd_InvocableEmailTemplateAction-url]: https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/src/classes/qsyd_InvocableEmailTemplateAction.cls
