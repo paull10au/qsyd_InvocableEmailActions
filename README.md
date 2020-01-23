@@ -74,10 +74,16 @@ There are 2 actions included
 
 The latter is intentionally opinionated for exclusive use with a Lightning Email Template. The premise behind these actions is to expose the full capability of Salesforce emails, and as such the api is deliberately comprehensive.
 
+To declaratively invoke these actions, do the following:
+
+1. Load the Process Builder or Lightning Flow editor
+2. Add an Action
+3. Search for QSyd - 
+
 ### [QSyd - Invocable Email Action][github-qsyd_InvocableEmailAction-url]
 
 <div>
-	<img align="right" width="150" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_parameters.png">
+	<img align="center" width="150" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_parameters.png">
 </div>
 
 An example programmatic usage:
