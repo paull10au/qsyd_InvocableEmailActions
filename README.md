@@ -152,8 +152,8 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 	  	<th>Description</th>
 	</tr>
   	<tr>
-		<td>NOT(<i>expression</i>)</td>
-		<td>Boolean negation, 1 (means true) if the expression is not zero</td>
+		<td>NOT(<i>Email Template Id or Name</i>)</td>
+		<td>Pass through either the Email Template name or Id</td>
 	</tr>
 	<tr>
 		<td>IF(<i>condition</i>,<i>value_if_true</i>,<i>value_if_false</i>)</td>
