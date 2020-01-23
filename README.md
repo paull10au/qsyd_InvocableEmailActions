@@ -83,17 +83,22 @@ To declaratively invoke these actions, do the following:
 
 ### [QSyd - Invocable Email Action][github-qsyd_InvocableEmailAction-url]
 
-The simplest use case:
+The simplest use case for Process Builder:
 
 <div>
-	<div style="float:left" width="50%">
-		<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_ProcessBuilder_parameters.png">
-	</div>
-	<div style="float:left" width="50%">
-		<img width="50%" align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_Flow_parameters_1.png">
-	</div>
+	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_ProcessBuilder_parameters.png">
 </div>
 
+<br/>
+The simplest use case for Lightning Flow:
+<br/>
+
+<div>
+	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_Flow_parameters_1.png">
+</div>
+<div>
+	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_Flow_parameters_2.png">
+</div>
 <br/>
 Example programmatic usage:
 <br/>
