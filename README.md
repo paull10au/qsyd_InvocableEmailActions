@@ -83,14 +83,14 @@ To declaratively invoke these actions, do the following:
 
 ### [QSyd - Invocable Email Action][github-qsyd_InvocableEmailAction-url]
 
-The simplest use case for Process Builder:
+#### The simplest use case for Process Builder:
 
 <div>
 	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_ProcessBuilder_parameters.png">
 </div>
 
 <br/>
-<p>The simplest use case for Lightning Flow:</p>
+#### The simplest use case for Lightning Flow:
 <br/>
 
 <div>
@@ -101,7 +101,7 @@ The simplest use case for Process Builder:
 </div>
 
 <br/>
-<p>Example programmatic usage:</p>
+#### Example programmatic usage:
 <br/>
 
 ```apex
