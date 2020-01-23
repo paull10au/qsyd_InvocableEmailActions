@@ -78,12 +78,14 @@ To declaratively invoke these actions, do the following:
 
 1. Load the Process Builder or Lightning Flow editor
 2. Add an Action
-3. Search for QSyd - 
+3. Search for either **QSyd - Invocable Email Action** or **QSyd - Invocable Email Template Action**
 
 ### [QSyd - Invocable Email Action][github-qsyd_InvocableEmailAction-url]
 
+The simplest use case:
+
 <div>
-	<img align="center" width="150" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_parameters.png">
+	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_parameters.png">
 </div>
 
 An example programmatic usage:
