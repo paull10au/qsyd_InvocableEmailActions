@@ -138,30 +138,22 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 #### Supported options
 
 <table>
-  <tr><th>Option</th><th>Description</th></tr>
-  <tr><td>NOT(<i>expression</i>)</td><td>Boolean negation, 1 (means true) if the expression is not zero</td></tr>
-  <tr><td>IF(<i>condition</i>,<i>value_if_true</i>,<i>value_if_false</i>)</td><td>Returns one value if the condition evaluates to true or the other if it evaluates to false</td></tr>
-  <tr><td>RANDOM()</td><td>Produces a random number between 0 and 1</td></tr>
-  <tr><td>MIN(<i>e1</i>,<i>e2</i>, <i>...</i>)</td><td>Returns the smallest of the given expressions</td></tr>
-  <tr><td>MAX(<i>e1</i>,<i>e2</i>, <i>...</i>)</td><td>Returns the biggest of the given expressions</td></tr>
-  <tr><td>ABS(<i>expression</i>)</td><td>Returns the absolute (non-negative) value of the expression</td></tr>
-  <tr><td>ROUND(<i>expression</i>,precision)</td><td>Rounds a value to a certain number of digits, uses the current rounding mode</td></tr>
-  <tr><td>FLOOR(<i>expression</i>)</td><td>Rounds the value down to the nearest integer</td></tr>
-  <tr><td>CEILING(<i>expression</i>)</td><td>Rounds the value up to the nearest integer</td></tr>
-  <tr><td>LOG(<i>expression</i>)</td><td>Returns the natural logarithm (base e) of an expression</td></tr>
-  <tr><td>LOG10(<i>expression</i>)</td><td>Returns the common logarithm (base 10) of an expression</td></tr>
-  <tr><td>SQRT(<i>expression</i>)</td><td>Returns the square root of an expression</td></tr>
-  <tr><td>SIN(<i>expression</i>)</td><td>Returns the trigonometric sine of an angle (in degrees)</td></tr>
-  <tr><td>COS(<i>expression</i>)</td><td>Returns the trigonometric cosine of an angle (in degrees)</td></tr>
-  <tr><td>TAN(<i>expression</i>)</td><td>Returns the trigonometric tangens of an angle (in degrees)</td></tr>
-  <tr><td>ASIN(<i>expression</i>)</td><td>Returns the angle of asin (in degrees)</td></tr>
-  <tr><td>ACOS(<i>expression</i>)</td><td>Returns the angle of acos (in degrees)</td></tr>
-  <tr><td>ATAN(<i>expression</i>)</td><td>Returns the angle of atan (in degrees)</td></tr>
-  <tr><td>SINH(<i>expression</i>)</td><td>Returns the hyperbolic sine of a value</td></tr>
-  <tr><td>COSH(<i>expression</i>)</td><td>Returns the hyperbolic cosine of a value</td></tr>
-  <tr><td>TANH(<i>expression</i>)</td><td>Returns the hyperbolic tangens of a value</td></tr>
-  <tr><td>RAD(<i>expression</i>)</td><td>Converts an angle measured in degrees to an approximately equivalent angle measured in radians</td></tr>
-  <tr><td>DEG(<i>expression</i>)</td><td>Converts an angle measured in radians to an approximately equivalent angle measured in degrees</td></tr>
+	<tr>
+		<th>Option</th>
+	  	<th>Description</th>
+	</tr>
+  	<tr>
+		<td>NOT(<i>expression</i>)</td>
+		<td>Boolean negation, 1 (means true) if the expression is not zero</td>
+	</tr>
+	<tr>
+		<td>IF(<i>condition</i>,<i>value_if_true</i>,<i>value_if_false</i>)</td><td>Returns one value if the condition evaluates to true or the other if it evaluates to false
+		</td>
+	</tr>
+	<tr>
+		<td>RANDOM()</td>
+		<td>Produces a random number between 0 and 1</td>
+	</tr>
 </table>
 
 
@@ -228,7 +220,7 @@ If you would like to join these awesome people, please refer to [contributing.md
 Special thanks to:
 
 - Q Branch Sydney for your continued support.
-- The myriad of Solution Engineers that have requested for, used and provided feedback on this project. 
+- Everyone that has requested for, used and provided feedback on this project. 
 
 
 ## License
