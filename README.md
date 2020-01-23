@@ -67,7 +67,7 @@ Deploy the actions:
 
 ## [Usage][wiki-usage-url]
 
-There are 2 actions included
+There are 2 actions included:
 
 - QSyd - Invocable Email Action
 - QSyd - Invocable Email Template Action
@@ -80,7 +80,8 @@ To declaratively invoke these actions, do the following:
 2. Add an Action
 3. Search for either **"QSyd - Invocable Email Action"** or **"QSyd - Invocable Email Template Action"**
 4. Populate the required fields
-5. Populate other logically required fields, eg. Addressee field (To, Cc, Bcc or Target Object)
+5. Populate other logically required fields, eg. At least 1 Recipient field (To, Cc, Bcc or Target Object Id)
+6. Optionally associate the email with a related record via the "What Id"
 
 ⚠️ Any exceptions that are thrown are surfaced as either [emails](https://help.salesforce.com/articleView?id=flow_troubleshoot_error_email.htm&type=5) or [handled faults](https://help.salesforce.com/articleView?id=flow_build_logic_fault.htm&type=5)
 
@@ -155,8 +156,8 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 		<td>Boolean negation, 1 (means true) if the expression is not zero</td>
 	</tr>
 	<tr>
-		<td>IF(<i>condition</i>,<i>value_if_true</i>,<i>value_if_false</i>)</td><td>Returns one value if the condition evaluates to true or the other if it evaluates to false
-		</td>
+		<td>IF(<i>condition</i>,<i>value_if_true</i>,<i>value_if_false</i>)</td>
+		<td>Returns one value if the condition evaluates to true or the other if it evaluates to false</td>
 	</tr>
 	<tr>
 		<td>RANDOM()</td>
@@ -167,7 +168,14 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 
 ### [QSyd - Invocable Email Template Action][github-qsyd_InvocableEmailTemplateAction-url]
 
-An example programmatic usage:
+#### The simplest use case for Process Builder:
+
+<div>
+	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailTemplateAction_ProcessBuilder_parameters.png">
+</div>
+
+#### An example programmatic usage:
+
 ```
    @IsTest
     private static void given_requiredEmailParametersAreProvided_when_anEmailIsInstantiated_then_anEmailIsSent() {
