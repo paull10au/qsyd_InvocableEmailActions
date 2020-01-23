@@ -90,7 +90,7 @@ The simplest use case for Process Builder:
 </div>
 
 <br/>
-The simplest use case for Lightning Flow:
+<p>The simplest use case for Lightning Flow:</p>
 <br/>
 
 <div>
@@ -99,8 +99,9 @@ The simplest use case for Lightning Flow:
 <div>
 	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_Flow_parameters_2.png">
 </div>
+
 <br/>
-Example programmatic usage:
+<p>Example programmatic usage:</p>
 <br/>
 
 ```apex
