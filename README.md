@@ -79,7 +79,15 @@ To declaratively invoke these actions, do the following:
 1. Load the Process Builder or Lightning Flow editor
 2. Add an Action
 3. Search for either **"QSyd - Invocable Email Action"** or **"QSyd - Invocable Email Template Action"**
-4. Populate the required fields and 
+4. Populate the required fields
+5. Populate other logically required fields, eg. Addressee field (To, Cc, Bcc or Target Object)
+
+⚠️ Any exceptions that are thrown are surfaced as either [emails](https://help.salesforce.com/articleView?id=flow_troubleshoot_error_email.htm&type=5) or [handled faults](https://help.salesforce.com/articleView?id=flow_build_logic_fault.htm&type=5)
+
+#### Example exception
+
+> An Apex error occurred: qsyd_InvocableEmailBase.InvocableEmailException: >>> qsyd_InvocableEmailAction.sendEmail failed with exception: >>> Exception executing qsyd_InvocableEmailBase.send: **Recipient not provided. Please provide at least one of the following: toAddress, ccAddress, bccAddress, targetObjectId**
+
 
 ### [QSyd - Invocable Email Action][github-qsyd_InvocableEmailAction-url]
 
