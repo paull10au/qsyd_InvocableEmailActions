@@ -86,12 +86,17 @@ To declaratively invoke these actions, do the following:
 The simplest use case:
 
 <div>
-	<img width="50%" align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_parameters.png">
+	<span>
+		<img style="float:right" width="50%" align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_ProcessBuilder_parameters.png">
+	</span>
+	<span>
+		<img width="50%" align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_Flow_parameters_1.png">
+	</span>
 </div>
 
-
-An example programmatic usage:
-
+<br/>
+Example programmatic usage:
+<br/>
 
 ```apex
 private static void given_requiredEmailParametersAreProvided_when_anEmailIsInstantiated_then_anEmailIsSent() {
