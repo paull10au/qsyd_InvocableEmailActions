@@ -78,19 +78,22 @@ To declaratively invoke these actions, do the following:
 
 1. Load the Process Builder or Lightning Flow editor
 2. Add an Action
-3. Search for either **QSyd - Invocable Email Action** or **QSyd - Invocable Email Template Action**
+3. Search for either **"QSyd - Invocable Email Action"** or **"QSyd - Invocable Email Template Action"**
+4. Populate the required fields and 
 
 ### [QSyd - Invocable Email Action][github-qsyd_InvocableEmailAction-url]
 
 The simplest use case:
 
 <div>
-	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_parameters.png">
+	<img width="50%" align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_parameters.png">
 </div>
+
 
 An example programmatic usage:
 
-```
+
+```apex
 private static void given_requiredEmailParametersAreProvided_when_anEmailIsInstantiated_then_anEmailIsSent() {
         qsyd_InvocableEmailAction.InvocableEmailParam param = new qsyd_InvocableEmailAction.InvocableEmailParam();
         List<qsyd_InvocableEmailAction.InvocableEmailParam> params = new List<qsyd_InvocableEmailAction.InvocableEmailParam>();
@@ -125,10 +128,10 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
     }
 ```
 
-#### Supported Functions
+#### Supported options
 
 <table>
-  <tr><th>Function<sup>*</sup></th><th>Description</th></tr>
+  <tr><th>Option</th><th>Description</th></tr>
   <tr><td>NOT(<i>expression</i>)</td><td>Boolean negation, 1 (means true) if the expression is not zero</td></tr>
   <tr><td>IF(<i>condition</i>,<i>value_if_true</i>,<i>value_if_false</i>)</td><td>Returns one value if the condition evaluates to true or the other if it evaluates to false</td></tr>
   <tr><td>RANDOM()</td><td>Produces a random number between 0 and 1</td></tr>
