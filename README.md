@@ -89,9 +89,7 @@ To declaratively invoke these actions, do the following:
 	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_ProcessBuilder_parameters.png">
 </div>
 
-<br/>
 #### The simplest use case for Lightning Flow:
-<br/>
 
 <div>
 	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_Flow_parameters_1.png">
@@ -100,9 +98,7 @@ To declaratively invoke these actions, do the following:
 	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_Flow_parameters_2.png">
 </div>
 
-<br/>
 #### Example programmatic usage:
-<br/>
 
 ```apex
 private static void given_requiredEmailParametersAreProvided_when_anEmailIsInstantiated_then_anEmailIsSent() {
