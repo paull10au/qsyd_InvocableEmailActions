@@ -86,12 +86,12 @@ To declaratively invoke these actions, do the following:
 The simplest use case:
 
 <div>
-	<span>
-		<img style="float:right" width="50%" align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_ProcessBuilder_parameters.png">
-	</span>
-	<span>
+	<div style="float:left" width="50%">
+		<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_ProcessBuilder_parameters.png">
+	</div>
+	<div style="float:left" width="50%">
 		<img width="50%" align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_Flow_parameters_1.png">
-	</span>
+	</div>
 </div>
 
 <br/>
