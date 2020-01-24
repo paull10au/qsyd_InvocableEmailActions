@@ -63,6 +63,7 @@ Deploy the actions:
 2. Select the Org Type (Production / Sandbox).
 3. Login to your Org.
 4. Deploy the code.
+5. Assign the qsyd_InvocableEmailActions permission set to any users that will trigger email sends.
 
 
 ## [Usage][wiki-usage-url]
@@ -92,13 +93,13 @@ To declaratively invoke these actions, do the following:
 
 ### [QSyd - Invocable Email Action][github-qsyd_InvocableEmailAction-url]
 
-#### The simplest use case for Process Builder:
+#### A simple use case for Process Builder:
 
 <div>
 	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_ProcessBuilder_parameters.png">
 </div>
 
-#### The simplest use case for Lightning Flow:
+#### A simple use case for Lightning Flow:
 
 <div>
 	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_Flow_parameters_1.png">
@@ -107,7 +108,7 @@ To declaratively invoke these actions, do the following:
 	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailAction_Flow_parameters_2.png">
 </div>
 
-#### Example programmatic usage:
+#### A programmatic example:
 
 ```apex
 private static void given_requiredEmailParametersAreProvided_when_anEmailIsInstantiated_then_anEmailIsSent() {
@@ -168,13 +169,19 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 
 ### [QSyd - Invocable Email Template Action][github-qsyd_InvocableEmailTemplateAction-url]
 
-#### The simplest use case for Process Builder:
+#### A simple use case for Process Builder:
 
 <div>
 	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailTemplateAction_ProcessBuilder_parameters.png">
 </div>
 
-#### An example programmatic usage:
+#### A simple use case for Lightning Flow:
+
+<div>
+	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailTemplateAction_Flow_parameters.png">
+</div>
+
+#### A programmatic example:
 
 ```
    @IsTest
