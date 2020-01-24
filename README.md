@@ -144,7 +144,7 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
         Test.stopTest();
     }
 ```
-\* Refer to the [test class](https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/src/classes/qsyd_InvocableEmailActionTest.cls) for working examples
+\* Refer to the [test class](https://github.com/paull10au/qsyd_InvocableEmailActions/blob/f595d2818fbd2201e6b7e3341cf03fc4054e9bbb/src/classes/qsyd_InvocableEmailActionTest.cls#L43) for working examples
 
 #### Supported options
 
@@ -209,7 +209,7 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
     }
 ```
 
-\* Refer to the [test class](https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/src/classes/qsyd_InvocableEmailTemplateActionTest.cls) for working examples
+\* Refer to the [test class](https://github.com/paull10au/qsyd_InvocableEmailActions/blob/2825b3e4245158ec0b14754485b37362ba9234a5/src/classes/qsyd_InvocableEmailTemplateActionTest.cls#L46) for working examples
 
 ## [Documentation][wiki-url]
 
