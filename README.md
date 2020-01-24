@@ -84,7 +84,7 @@ To declaratively invoke these actions, do the following:
 5. Populate other logically required fields, eg. At least 1 Recipient field (To, Cc, Bcc or Target Object Id)
 6. Optionally associate the email with a related record via the "What Id"
 
-⚠️ Exceptions due to incorrect configuration or technical send errors will be sent as the standard [email](https://help.salesforce.com/articleView?id=flow_troubleshoot_error_email.htm&type=5) or can be displayed as a [handled fault](https://help.salesforce.com/articleView?id=flow_build_logic_fault.htm&type=5).
+⚠️ Exceptions due to incorrect configuration or technical send errors will be sent as the standard [email](https://help.salesforce.com/articleView?id=flow_troubleshoot_error_email.htm&type=5) or can be displayed as a [handled fault](https://help.salesforce.com/articleView?id=flow_build_logic_fault.htm&type=5) within the Lightning Flow Builder.
 
 #### Example exception
 
