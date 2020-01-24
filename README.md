@@ -63,7 +63,7 @@ Deploy the actions:
 2. Select the Org Type (Production / Sandbox).
 3. Login to your Org.
 4. Deploy the code.
-5. Assign the qsyd_InvocableEmailActions permission set to any users that will trigger email sends.
+5. [Assign](https://help.salesforce.com/articleView?id=perm_sets_assigning.htm&type=5) the qsyd_Invocable_Email_Actions Permission Set to any users that will trigger email sends.
 
 
 ## [Usage][wiki-usage-url]
