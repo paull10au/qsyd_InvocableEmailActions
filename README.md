@@ -252,6 +252,7 @@ Special thanks to:
 ## License
 
 [![License][license-shield]][license-url] Copyright © 2020 [Paul Lucas][author-url]
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
 <!--- Images -->
