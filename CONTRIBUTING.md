@@ -1,6 +1,6 @@
 # Contributing to Invocable Email Actions
 
-First off, thanks for taking the time to contribute! :pray:
+First and foremost, thank you for taking the time to contribute! :pray:
 
 The following is a set of guidelines for contributing to Invocable Email Actions.
 
