@@ -79,7 +79,7 @@ To declaratively invoke these actions, do the following:
 
 1. Load the Process Builder or Lightning Flow editor
 2. Add an Action
-3. Search for either **"QSyd - Invocable Email Action"** or **"QSyd - Invocable Email Template Action"**
+3. Select the preferred action: **"QSyd - Invocable Email Action"** or **"QSyd - Invocable Email Template Action"**
 4. Populate the required fields
 5. Populate other logically required fields, eg. At least 1 Recipient field (To, Cc, Bcc or Target Object Id)
 6. Optionally associate the email with a related record via the "What Id"
