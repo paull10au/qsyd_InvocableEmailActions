@@ -155,27 +155,79 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 	</tr>
   	<tr>
 		<td><i>toAddress</i></td>
-		<td>Recipient To Addresses, Max 100, Comma Delimited</td>
+		<td>Recipient To Addresses, Max 100, Comma Delimited.</td>
 	</tr>
 	<tr>
 		<td><i>ccAddress</i></td>
-		<td>Recipient Cc Addresses, Max 25, Comma Delimited</td>
+		<td>Recipient Cc Addresses, Max 25, Comma Delimited.</td>
 	</tr>
 	<tr>
 		<td><i>bccAddress</i></td>
-		<td>Recipient Bcc Addresses, Max 25, Comma Delimited</td>
+		<td>Recipient Bcc Addresses, Max 25, Comma Delimited.</td>
+	</tr>
+	<tr>
+		<td><i>emailTemplate</i></td>
+		<td>Email Template Id or Name.</td>
 	</tr>
 	<tr>
 		<td><i>subject</i></td>
-		<td>Email Subject</td>
+		<td>Email Subject.</td>
 	</tr>
 	<tr>
 		<td><i>bodyPlainText</i></td>
-		<td>Email Plain Text Body</td>
+		<td>Email Plain Text Body.</td>
 	</tr>
 	<tr>
 		<td><i>bodyHtml</i></td>
-		<td>Email Html Body</td>
+		<td>Email Html Body.</td>
+	</tr>
+	<tr>
+		<td><i>charSet</i></td>
+		<td>Email Character Set.</td>
+	</tr>
+	<tr>
+		<td><i>Attachment Ids</i></td>
+		<td>Comma delimited list of ids of Document, ContentVersion, or Attachment.</td>
+	</tr>
+	<tr>
+		<td><i>targetObjectId</i></td>
+		<td>The Id of the contact, lead, or user to which the email will be sent.</td>
+	</tr>
+	<tr>
+		<td><i>whatId</i></td>
+		<td>If you specify a contact for the targetObjectId field, you can specify an optional whatId as well. Must be either a Account, Asset, Campaign, Case, Contract, Opportunity, Order, Product, Solution, Custom</td>
+	</tr>
+	<tr>
+		<td><i>parentMessageIds</i></td>
+		<td>This field identifies the email or emails to which this email is a reply (parent emails).</td>
+	</tr>
+	<tr>
+		<td><i>emailOptOutPolicy</i></td>
+		<td>If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call.</td>
+	</tr>
+	<tr>
+		<td><i>orgWideEmailAddress</i></td>
+		<td>The associated org wide email address set up in Organization-Wide Addresses.</td>
+	</tr>
+	<tr>
+		<td><i>saveAsActivity</i></td>
+		<td>This argument only applies if the recipient list is based on targetObjectId or targetObjectIds. If HTML email tracking is enabled for the organization, you will be able to track open rates.</td>
+	</tr>
+	<tr>
+		<td><i>useSignature</i></td>
+		<td>Indicates whether the email includes an email signature if the user has one configured.</td>
+	</tr>
+	<tr>
+		<td><i>treatBodiesAsTemplate</i></td>
+		<td>The subject, plain text, and HTML text bodies of the email are treated as template data. The merge fields are resolved using the renderEmailTemplate method.</td>
+	</tr>
+	<tr>
+		<td><i>treatTargetObjectAsRecipient</i></td>
+		<td>If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email.</td>
+	</tr>
+	<tr>
+		<td><i>throwExceptionForSendErrors</i></td>
+		<td>Throw an exception containing any send results errors. The default is true.</td>
 	</tr>
 </table>
 
