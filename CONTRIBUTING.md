@@ -138,7 +138,7 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
 - Constants should be uppercase with logical underscore breakpoints, eg. 
 
 ```Apex
-private static final Map<String, String> APEXPAGEACTIONS_MAP;
+private static final Map<String, String> APEX_PAGE_ACTIONS_MAP;
 private static final Integer MAX_WIDTH = 99;
 ```
 Variable — a name that tells the reader of the program what the variable represents i.e. if you are storing a test grade then pick grade vs var1 . Keep the variable names short avoid including metadata.
