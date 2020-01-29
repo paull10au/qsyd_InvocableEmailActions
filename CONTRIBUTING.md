@@ -134,15 +134,15 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
      TODO:
  */
 ```
-- Class and interface names are CamelCase, with the exception of pseudo-namespace prefixes. It is recommended to use the whole word and avoid acronyms/abbreviations, **keeping in mind the 40 character limitation**.
+- Class and interface names are **CamelCase**, with the exception of pseudo-namespace prefixes. It is recommended to use the whole word and avoid acronyms/abbreviations, **keeping in mind the 40 character limitation**.
 - File names should match the class or interface name and should end with .cls. 
-- Method names should be verbs in lowerCamelCase, eg. execute() or executeAsync().
+- Method names should be verbs in **lowerCamelCase**, eg. execute() or executeAsync().
 - Constants should be uppercase with logical underscore breakpoints, eg. 
 ```Apex
 private static final Map<String, String> APEX_PAGE_ACTIONS_MAP;
 private static final Integer MAX_WIDTH = 99;
 ```
-- Variables should be lowerCamelCase, descriptive but concise and for the most part, should not be abbreviated.
+- Variables should be **lowerCamelCase**, descriptive but concise and for the most part, should not be abbreviated.
 
 ## General Styleguide
 ESLint addresses a majority of coding best practices, most of which can conceptually be applied to other languages. Here are  additional code preferences which have or are becoming the coding norm.
