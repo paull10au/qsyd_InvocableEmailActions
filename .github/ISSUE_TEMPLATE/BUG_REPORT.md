@@ -18,10 +18,10 @@ assignees:
 > Screen shots, if applicable are also helpful.
 
 ## Expected Behavior
-What should happen
+What should happen.
 
 ## Actual Result
-What is happening
+What is happening.
 
 ## Device? 
 - Desktop
