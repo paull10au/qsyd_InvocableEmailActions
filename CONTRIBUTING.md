@@ -109,6 +109,28 @@ the reviewer(s) may ask you to complete additional design work, tests, or other 
 
 All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.com/salesforce/eslint-config-lwc). Please install the [ESLint LWC Plugin](https://github.com/salesforce/eslint-plugin-lwc) to ensure a baseline for valid consistent code.
 
+### Apex Styleguide
+
+Include the following boilerplate at the top of every file
+
+```/**
+ *      
+     Author:        Paul Lucas
+     Company:       Salesforce
+     Description:   qsyd_InvocableEmailBase - Base class for invocable methods wanting to calling the Messaging.sendEmail API
+
+     Date:          28-Apr-2018
+
+     Reference:     https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_messaging.htm
+                    https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm
+
+     Usage:         Assign execution authority for the profiles which will be executing the process builders or flows executing this class.
+
+     History:
+     When           Who                 What
+
+ ```*/
+
 ## Additional Notes
 
 ### Issue and Pull Request Labels
