@@ -251,7 +251,7 @@ Special thanks to:
 
 ## License
 
-[![License][license-shield]][license-url] Copyright © 2020 [Paul Lucas][author-url]
+[![License][license-shield]][license-url] Copyright © 2020 [Q Branch][author-url]
 
 
 <!--- Images -->
