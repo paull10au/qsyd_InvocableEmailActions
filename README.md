@@ -154,16 +154,28 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 	  	<th>Description</th>
 	</tr>
   	<tr>
-		<td>NOT(<i>Email Template Id or Name</i>)</td>
-		<td>Pass through either the Email Template name or Id</td>
+		<td><i>toAddress</i></td>
+		<td>Recipient To Addresses, Max 100, Comma Delimited</td>
 	</tr>
 	<tr>
-		<td>IF(<i>condition</i>,<i>value_if_true</i>,<i>value_if_false</i>)</td>
-		<td>Returns one value if the condition evaluates to true or the other if it evaluates to false</td>
+		<td><i>ccAddress</i></td>
+		<td>Recipient Cc Addresses, Max 25, Comma Delimited</td>
 	</tr>
 	<tr>
-		<td>RANDOM()</td>
-		<td>Produces a random number between 0 and 1</td>
+		<td><i>bccAddress</i></td>
+		<td>Recipient Bcc Addresses, Max 25, Comma Delimited</td>
+	</tr>
+	<tr>
+		<td><i>subject</i></td>
+		<td>Email Subject</td>
+	</tr>
+	<tr>
+		<td><i>bodyPlainText</i></td>
+		<td>Email Plain Text Body</td>
+	</tr>
+	<tr>
+		<td><i>bodyHtml</i></td>
+		<td>Email Html Body</td>
 	</tr>
 </table>
 
