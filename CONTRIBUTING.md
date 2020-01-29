@@ -147,7 +147,7 @@ private static final Integer MAX_WIDTH = 99;
 ## General Styleguide
 ESLint addresses a majority of coding best practices, most of which can conceptually be applied to other languages. Here are  additional code preferences which have or are becoming the coding norm.
 
-- Adhere to the (DRY Principle)[https://en.wikipedia.org/wiki/Don%27t_repeat_yourself]
+- Adhere to the [DRY Principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 - Indents should be **tabs**, based on either **2 or 4 spaces** and should stay consistent.
 - Variables should be declared at the start of each block.
 - Always include **curly braces** when writing conditional block statements.
