@@ -239,7 +239,7 @@ Read the [FAQs][wiki-faqs-url] answer common questions.
 
 See the list of [Contributors][contributors-url] who participated in this project.
 
-If you would like to join these awesome people, please refer to [contributing.md](/contributing.md) for guidelines.
+If you would like to join these awesome people, please refer to [contributing.md](/CONTRIBUTING.md) for guidelines.
 
 ## Acknowledgements
 
