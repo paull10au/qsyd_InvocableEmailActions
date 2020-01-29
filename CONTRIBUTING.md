@@ -113,7 +113,8 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
 
 Include the following boilerplate at the top of every file
 
-```/**
+```Apex
+/**
  *      
      Author:        Paul Lucas
      Company:       Salesforce
@@ -129,7 +130,8 @@ Include the following boilerplate at the top of every file
      History:
      When           Who                 What
 
- ```*/
+*/
+```
 
 ## Additional Notes
 
