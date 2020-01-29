@@ -38,7 +38,7 @@ Salesforce administrators have the aforementioned declarative tools at their dis
 - **Flexible recipients.** In additional to "To" recipients, send carbon copies (CC) and/or blind carbon copies (BCC).
 - **Lightning Email Templates.** Upgrade from Classic Email Templates to the newer Lightning Email Templates which allows global headers and footers.
 - **Include attachments.**  Attach Document, ContentVersion, or Attachment items to the email.
-- **Other options.** Control [other](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm#apex_Messaging_SingleEmailMessage_constructors) email options.
+- **Other [supported options](#supported-options).** Control [other](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm#apex_Messaging_SingleEmailMessage_constructors) email options.
 
 
 ## [Getting Started][wiki-getting-started-url]
