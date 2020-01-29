@@ -111,7 +111,7 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
 
 ### Apex Styleguide
 
-Include the following boilerplate at the top of every file
+- Include the following boilerplate at the top of every file:
 
 ```Apex
 /**
@@ -132,6 +132,17 @@ Include the following boilerplate at the top of every file
 
 */
 ```
+- Class and interface names are CamelCase, with the exception of pseudo-namespace prefixes. It is recommended to use the whole word and avoid acronyms/abbreviations, **keeping in mind the 40 character limitation**.
+- File names should match the class or interface name and should end with .cls. 
+- Method names should be verbs in lowerCamelCase, eg. execute() or executeAsync()
+- Constants should be uppercase with logical underscore breakpoints, eg. 
+
+```Apex
+private static final Map<String, String> APEXPAGEACTIONS_MAP;
+private static final Integer MAX_WIDTH = 99;
+```
+Variable — a name that tells the reader of the program what the variable represents i.e. if you are storing a test grade then pick grade vs var1 . Keep the variable names short avoid including metadata.
+
 
 ## Additional Notes
 
