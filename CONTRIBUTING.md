@@ -109,6 +109,8 @@ the reviewer(s) may ask you to complete additional design work, tests, or other 
 
 All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.com/salesforce/eslint-config-lwc). Please install the [ESLint LWC Plugin](https://github.com/salesforce/eslint-plugin-lwc) to ensure a baseline for valid consistent code.
 
+- Prefer higher order functions over primitive forms of iterators, eg. (Array methods)[https://www.w3schools.com/jsref/jsref_obj_array.asp]
+
 ### Apex Styleguide
 
 - Include the following boilerplate at the top of every file:
@@ -118,31 +120,41 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
  *      
      Author:        Paul Lucas
      Company:       Salesforce
-     Description:   qsyd_InvocableEmailBase - Base class for invocable methods wanting to calling the Messaging.sendEmail API
+     Description:   qsyd_InvocableEmailTemplateAction - Lightning Flow and Process Builder invocable action calling the Messaging.sendEmail API enabling a template based messages.
+                    Optionally allows tracking of sent emails.
 
-     Date:          28-Apr-2018
+     Date:          25-Apr-2018
+     Reference:     https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm
+     Test Class:    qsyd_InvocableEmailTemplateActionTest
 
-     Reference:     https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_messaging.htm
-                    https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm
-
-     Usage:         Assign execution authority for the profiles which will be executing the process builders or flows executing this class.
-
+     Usage:         Refer to qsyd_InvocableEmailTemplateActionTest methods
      History:
      When           Who                 What
 
-*/
+     TODO:
+ */
 ```
 - Class and interface names are CamelCase, with the exception of pseudo-namespace prefixes. It is recommended to use the whole word and avoid acronyms/abbreviations, **keeping in mind the 40 character limitation**.
 - File names should match the class or interface name and should end with .cls. 
-- Method names should be verbs in lowerCamelCase, eg. execute() or executeAsync()
+- Method names should be verbs in lowerCamelCase, eg. execute() or executeAsync().
 - Constants should be uppercase with logical underscore breakpoints, eg. 
-
 ```Apex
 private static final Map<String, String> APEX_PAGE_ACTIONS_MAP;
 private static final Integer MAX_WIDTH = 99;
 ```
-Variable — a name that tells the reader of the program what the variable represents i.e. if you are storing a test grade then pick grade vs var1 . Keep the variable names short avoid including metadata.
+- Variables should be lowerCamelCase, descriptive but concise and for the most part, should not be abbreviated.
 
+## General Styleguide
+ESLint addresses a majority of coding best practices, most of which can conceptually be applied to other languages. Here are  additional code preferences which have or are becoming the coding norm.
+
+- Indentation: Use **tabs** based on **2 or 4 spaces** and stay consistent.
+- Variables should be declared at the start of each block.
+- Always include **curly braces** when writing conditional block statements.
+- Prefer a **ternary operator** over a single conditional statement (if-else).
+- Prefer a **switch or case** statement over multiple (> 2) if-else statements.
+- Prefer writing self-describing code over inline comments.
+
+> Strive to incorporate the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles when developing either Object Oriented or Functional programming languages.
 
 ## Additional Notes
 
