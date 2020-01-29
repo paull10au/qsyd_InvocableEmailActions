@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>qsyd_InvocableEmailAction</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>qsyd_InvocableEmailBase</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>qsyd_InvocableEmailResult</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>qsyd_InvocableEmailTemplateAction</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Assign access to the Invocable Email Actions artefacts</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>QSyd - Invocable Email Actions</label>
+</PermissionSet>

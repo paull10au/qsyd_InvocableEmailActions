@@ -89,7 +89,7 @@ global with sharing class qsyd_InvocableEmailTemplateAction extends qsyd_Invocab
         @InvocableVariable(label='Email Template Id or Name' description='Id, Name, or Developer Name of Email Template' required=true)
         global String emailTemplate;
 
-        @InvocableVariable(label='Contact, Lead or User Id' description='The Id of the contact, lead, or user to which the email will be sent.' required=true)
+        @InvocableVariable(label='Target Object Id - Contact, Lead or User Id' description='The Id of the contact, lead, or user to which the email will be sent.' required=true)
         global String targetObjectId;
 
         @InvocableVariable(label='What Id - If you specify a Contact Id, either an Account, Asset, Campaign, Case, Contract, Opportunity, Order, Product, Solution, Custom' description='If you specify a contact for the targetObjectId field, you can specify an optional whatId as well. Must be either a Account, Asset, Campaign, Case, Contract, Opportunity, Order, Product, Solution, Custom' required=false)

@@ -99,7 +99,7 @@ global with sharing class qsyd_InvocableEmailAction extends qsyd_InvocableEmailB
         @InvocableVariable(label='Attachment Ids' description='Comma delimited list of ids of Document, ContentVersion, or Attachment' required=false)
         global String attachmentIds;
 
-        @InvocableVariable(label='Contact, Lead or User Id' description='The Id of the contact, lead, or user to which the email will be sent.' required=false)
+        @InvocableVariable(label='Target Object Id - Contact, Lead or User Id' description='The Id of the contact, lead, or user to which the email will be sent.' required=false)
         global String targetObjectId;
 
         @InvocableVariable(label='What Id - If you specify a Contact Id, either an Account, Asset, Campaign, Case, Contract, Opportunity, Order, Product, Solution, Custom' description='If you specify a contact for the targetObjectId field, you can specify an optional whatId as well. Must be either a Account, Asset, Campaign, Case, Contract, Opportunity, Order, Product, Solution, Custom' required=false)

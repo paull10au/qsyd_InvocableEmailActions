@@ -10,5 +10,9 @@
         <members>qsyd_InvocableEmailTemplateActionTest</members>
         <name>ApexClass</name>
     </types>
+    <types>
+        <members>qsyd_Invocable_Email_Actions</members>
+        <name>PermissionSet</name>
+    </types>
     <version>47.0</version>
 </Package>
