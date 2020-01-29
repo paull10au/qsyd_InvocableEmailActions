@@ -147,14 +147,15 @@ private static final Integer MAX_WIDTH = 99;
 ## General Styleguide
 ESLint addresses a majority of coding best practices, most of which can conceptually be applied to other languages. Here are  additional code preferences which have or are becoming the coding norm.
 
-- Indentation: Use **tabs** based on **2 or 4 spaces** and stay consistent.
+- Adhere to the (DRY Principle)[https://en.wikipedia.org/wiki/Don%27t_repeat_yourself]
+- Indents should be **tabs**, based on either **2 or 4 spaces** and should stay consistent.
 - Variables should be declared at the start of each block.
 - Always include **curly braces** when writing conditional block statements.
 - Prefer a **ternary operator** over a single conditional statement (if-else).
 - Prefer a **switch or case** statement over multiple (> 2) if-else statements.
 - Prefer writing self-describing code over inline comments.
 
-> Strive to incorporate the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles when developing either Object Oriented or Functional programming languages.
+> Strive to incorporate the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles when developing in either Object Oriented or Functional programming languages.
 
 ## Additional Notes
 
