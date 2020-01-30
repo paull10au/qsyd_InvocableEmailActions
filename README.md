@@ -6,7 +6,7 @@
 
 [![Stars][stars-shield]][repository-url] [![Forks][forks-shield]][repository-url] [![Downloads][downloads-shield]][downloads-url] [![Issues][issues-shield]][issues-url]
 
-#### The full power of Salesforce emails and templates - declaratively! 
+#### *The Full Power of Salesforce Emails and Templates - Declaratively!*
 
 #### Apex email actions available for Process Builder and Lightning Flow Builder leveraging the <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm">SingleEmailMessage Class.</a>
 
