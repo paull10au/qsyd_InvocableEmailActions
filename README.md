@@ -7,7 +7,7 @@
 # Invocable Email Actions
 
 
-#### *The Full Power of Salesforce Emails and Templates - Declaratively!*
+#### *The Full Power of Salesforce Emails and Lightning Templates - Declaratively!*
 
 #### Apex email actions available for Process Builder and Lightning Flow Builder leveraging the <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm">SingleEmailMessage Class.</a>
 
