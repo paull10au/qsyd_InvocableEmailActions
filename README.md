@@ -235,6 +235,12 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 
 ### [QSyd - Invocable Email Template Action][github-qsyd_InvocableEmailTemplateAction-url]
 
+#### Example lightning email template:
+
+<div>
+	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/lightning_email_template.png">
+</div>
+
 #### A simple use case for Process Builder:
 
 <div>
