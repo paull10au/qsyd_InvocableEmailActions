@@ -7,7 +7,7 @@
 # Invocable Email Actions
 
 
-#### *The Full Power of Salesforce Emails and Templates - Declaratively!*
+#### *The Full Power of Salesforce Emails and Lightning Templates - Declaratively!*
 
 #### Apex email actions available for Process Builder and Lightning Flow Builder leveraging the <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm">SingleEmailMessage Class.</a>
 
@@ -199,88 +199,28 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 
 ### Supported options
 
-<table>
-	<tr>
-		<th>Option</th>
-	  	<th>Description</th>
-	</tr>
-  	<tr>
-		<td><i>Recipient To Addresses</i></td>
-		<td>Recipient To Addresses, Max 100, Comma Delimited.</td>
-	</tr>
-	<tr>
-		<td><i>Recipient Cc Addresses</i></td>
-		<td>Recipient Cc Addresses, Max 25, Comma Delimited.</td>
-	</tr>
-	<tr>
-		<td><i>Recipient Bcc Addresses</i></td>
-		<td>Recipient Bcc Addresses, Max 25, Comma Delimited.</td>
-	</tr>
-	<tr>
-		<td><i>Email Template Id or Name</i></td>
-		<td>Id, Name, or Developer Name of Email Template.</td>
-	</tr>
-	<tr>
-		<td><i>Email Subject</i></td>
-		<td>Email Subject.</td>
-	</tr>
-	<tr>
-		<td><i>Email Plain Text Body</i></td>
-		<td>Email Plain Text Body.</td>
-	</tr>
-	<tr>
-		<td><i>Email Html Body</i></td>
-		<td>Email Html Body.</td>
-	</tr>
-	<tr>
-		<td><i>Email Character Set</i></td>
-		<td>Email Character Set.</td>
-	</tr>
-	<tr>
-		<td><i>Attachment Ids</i></td>
-		<td>Comma delimited list of ids of Document, ContentVersion, or Attachment.</td>
-	</tr>
-	<tr>
-		<td><i>Target Object Id - Contact, Lead or User Id</i></td>
-		<td>The Id of the contact, lead, or user to which the email will be sent.</td>
-	</tr>
-	<tr>
-		<td><i>What Id</i></td>
-		<td>If you specify a contact for the targetObjectId field, you can specify an optional whatId as well. Must be either a Account, Asset, Campaign, Case, Contract, Opportunity, Order, Product, Solution, Custom</td>
-	</tr>
-	<tr>
-		<td><i>Parent Message Id</i></td>
-		<td>This field identifies the email or emails to which this email is a reply (parent emails).</td>
-	</tr>
-	<tr>
-		<td><i>Email Opt Out Policy</i></td>
-		<td>If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call.</td>
-	</tr>
-	<tr>
-		<td><i>Org Wide Email Address</i></td>
-		<td>The associated org wide email address set up in Organization-Wide Addresses.</td>
-	</tr>
-	<tr>
-		<td><i>Save as Activity?</i></td>
-		<td>This argument only applies if the recipient list is based on targetObjectId or targetObjectIds. If HTML email tracking is enabled for the organization, you will be able to track open rates.</td>
-	</tr>
-	<tr>
-		<td><i>Use Signature?</i></td>
-		<td>Indicates whether the email includes an email signature if the user has one configured.</td>
-	</tr>
-	<tr>
-		<td><i>Treat Bodies as Template?</i></td>
-		<td>The subject, plain text, and HTML text bodies of the email are treated as template data. The merge fields are resolved using the renderEmailTemplate method.</td>
-	</tr>
-	<tr>
-		<td><i>Treat Target Object as Recipient?</i></td>
-		<td>If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email.</td>
-	</tr>
-	<tr>
-		<td><i>Throw an Exception for Send Errors?</i></td>
-		<td>Throw an exception containing any send results errors. The default is true.</td>
-	</tr>
-</table>
+| Option | Description 
+| ------ | ----------- 
+| `Recipient To Addresses` | Recipient To Addresses, Max 100, Comma Delimited
+| `Recipient Cc Addresses` | Recipient Cc Addresses, Max 25, Comma Delimited
+| `Recipient Bcc Addresses` | Recipient Bcc Addresses, Max 25, Comma Delimited
+| `Email Template Id or Name` | Id, Name, or Developer Name of Email Template
+| `Email Subject` | Email Subject
+| `Email Plain Text Body` | Email Plain Text Body
+| `Email Html Body` | Email Html Body
+| `Email Character Set` | The character set for the email. If this value is null, the user's default value is used
+| `Attachment Ids` | Comma delimited list of Document, ContentVersion, or Attachment Ids
+| `Target Object Id - Contact, Lead or User Id` | The Id of the contact, lead, or user to whom the email will be sent
+| `What Id` | If you specify a contact for the targetObjectId field, you can specify an optional whatId as well. Must be either a Account, Asset, Campaign, Case, Contract, Opportunity, Order, Product, Solution, Custom
+| `Parent Message Id` | This field identifies the email or emails to which this email is a reply (parent emails)
+| `Email Opt Out Policy` | If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call
+| `Org Wide Email Address` | The associated org wide email address set up in Organization-Wide Addresses
+| `Save as Activity?` | This argument only applies if the recipient list is based on targetObjectId or targetObjectIds. If HTML email tracking is enabled for the organization, you will be able to track open rate
+| `Use Signature?` | Indicates whether the email includes an email signature if the user has one configured
+| `Treat Bodies as Template?` | The subject, plain text, and HTML text bodies of the email are treated as template data. The merge fields are resolved using the renderEmailTemplate method
+| `Treat Target Object as Recipient?` | If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email
+| `Throw an Exception for Send Errors?` | Throw an exception containing any send results errors. The default is true
+
 
 ## [Documentation][wiki-url]
 
