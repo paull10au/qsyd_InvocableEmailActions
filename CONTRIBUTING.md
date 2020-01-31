@@ -187,7 +187,7 @@ ESLint addresses a majority of coding best practices, most of which can conceptu
 - Indents should be **tabs**, based on either **2 or 4 spaces** and should stay consistent.
 - Variables should be declared at the start of each block.
 - Always include **curly braces** when writing conditional block statements.
-- Prefer a **ternary operator** over a single conditional statement (if-else).
+- Prefer a **ternary operator** over a single conditional assignment statement (if-else).
 - Prefer a **switch or case** statement over multiple (> 2) if-else statements.
 - Prefer writing self-describing code over inline comments.
 
