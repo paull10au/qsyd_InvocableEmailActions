@@ -130,7 +130,7 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
 
 - Prefer higher order functions over primitive forms of iterators, eg. (Array methods)[https://www.w3schools.com/jsref/jsref_obj_array.asp]
 
-- Include the following boilerplate at the top of every html file:
+- Include the following boilerplate at the top of every js file:
 
 ```Javascript
 /**
