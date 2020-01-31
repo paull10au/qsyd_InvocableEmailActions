@@ -147,7 +147,57 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 ```
 \* Refer to the [test class](https://github.com/paull10au/qsyd_InvocableEmailActions/blob/f595d2818fbd2201e6b7e3341cf03fc4054e9bbb/src/classes/qsyd_InvocableEmailActionTest.cls#L43) for complete working examples.
 
-#### Supported options
+
+### [QSyd - Invocable Email Template Action][github-qsyd_InvocableEmailTemplateAction-url]
+
+#### Example lightning email template:
+
+<div>
+	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/lightning_email_template.png">
+</div>
+
+#### A simple use case for Process Builder:
+
+<div>
+	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailTemplateAction_ProcessBuilder_parameters.png">
+</div>
+
+#### A simple use case for Lightning Flow:
+
+<div>
+	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailTemplateAction_Flow_parameters.png">
+</div>
+
+#### A programmatic example:
+
+```
+   @IsTest
+    private static void given_requiredEmailParametersAreProvided_when_anEmailIsInstantiated_then_anEmailIsSent() {
+        qsyd_InvocableEmailTemplateAction.InvocableEmailParam param = new qsyd_InvocableEmailTemplateAction.InvocableEmailParam();
+        List<qsyd_InvocableEmailTemplateAction.InvocableEmailParam> params = new List<qsyd_InvocableEmailTemplateAction.InvocableEmailParam>();
+
+        initialiseSetupTestData();
+
+        Test.startTest();
+
+        param.toAddress = 'plucas@salesforce.com';
+        param.emailTemplate = 'Test Template';
+        param.targetObjectId = CONTACT_EXAMPLE;
+        params.add(param);
+
+        List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
+        Integer invocations = Limits.getEmailInvocations();
+
+        // Assert an email was sent
+        System.assertEquals(1, invocations);
+
+        Test.stopTest();
+    }
+```
+
+\* Refer to the [test class](https://github.com/paull10au/qsyd_InvocableEmailActions/blob/2825b3e4245158ec0b14754485b37362ba9234a5/src/classes/qsyd_InvocableEmailTemplateActionTest.cls#L46) for complete working examples.
+
+### Supported options
 
 <table>
 	<tr>
@@ -231,56 +281,6 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 		<td>Throw an exception containing any send results errors. The default is true.</td>
 	</tr>
 </table>
-
-
-### [QSyd - Invocable Email Template Action][github-qsyd_InvocableEmailTemplateAction-url]
-
-#### Example lightning email template:
-
-<div>
-	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/lightning_email_template.png">
-</div>
-
-#### A simple use case for Process Builder:
-
-<div>
-	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailTemplateAction_ProcessBuilder_parameters.png">
-</div>
-
-#### A simple use case for Lightning Flow:
-
-<div>
-	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/qsyd_InvocableEmailTemplateAction_Flow_parameters.png">
-</div>
-
-#### A programmatic example:
-
-```
-   @IsTest
-    private static void given_requiredEmailParametersAreProvided_when_anEmailIsInstantiated_then_anEmailIsSent() {
-        qsyd_InvocableEmailTemplateAction.InvocableEmailParam param = new qsyd_InvocableEmailTemplateAction.InvocableEmailParam();
-        List<qsyd_InvocableEmailTemplateAction.InvocableEmailParam> params = new List<qsyd_InvocableEmailTemplateAction.InvocableEmailParam>();
-
-        initialiseSetupTestData();
-
-        Test.startTest();
-
-        param.toAddress = 'plucas@salesforce.com';
-        param.emailTemplate = 'Test Template';
-        param.targetObjectId = CONTACT_EXAMPLE;
-        params.add(param);
-
-        List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
-        Integer invocations = Limits.getEmailInvocations();
-
-        // Assert an email was sent
-        System.assertEquals(1, invocations);
-
-        Test.stopTest();
-    }
-```
-
-\* Refer to the [test class](https://github.com/paull10au/qsyd_InvocableEmailActions/blob/2825b3e4245158ec0b14754485b37362ba9234a5/src/classes/qsyd_InvocableEmailTemplateActionTest.cls#L46) for complete working examples.
 
 ## [Documentation][wiki-url]
 
