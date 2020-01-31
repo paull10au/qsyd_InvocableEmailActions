@@ -111,7 +111,7 @@ global with sharing class qsyd_InvocableEmailAction extends qsyd_InvocableEmailB
         @InvocableVariable(label='Email Opt Out Policy' description='If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call.' required=false)
         global String emailOptOutPolicy;
 
-        @InvocableVariable(label='Org Wide Email Address' description='The associated org wide email address set up in Organization-Wide Addresses' required=false)
+        @InvocableVariable(label='Org Wide Email Address' description='The associated org wide email address set up in Organization-Wide Addresses.' required=false)
         global String orgWideEmailAddress;
 
         @InvocableVariable(label='Save as Activity?' description='This argument only applies if the recipient list is based on targetObjectId or targetObjectIds. If HTML email tracking is enabled for the organization, you will be able to track open rates.' required=false)
@@ -123,7 +123,7 @@ global with sharing class qsyd_InvocableEmailAction extends qsyd_InvocableEmailB
         @InvocableVariable(label='Treat Bodies as Template?' description='The subject, plain text, and HTML text bodies of the email are treated as template data. The merge fields are resolved using the renderEmailTemplate method.' required=false)
         global Boolean treatBodiesAsTemplate;
 
-        @InvocableVariable(label='Treat Target Object as Recipient?' description=' If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email.' required=false)
+        @InvocableVariable(label='Treat Target Object as Recipient?' description='If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email.' required=false)
         global Boolean treatTargetObjectAsRecipient;
 
         @InvocableVariable(label='Throw an Exception for Send Errors?' description='Throw an exception containing any send results errors. The default is true.' required=false)

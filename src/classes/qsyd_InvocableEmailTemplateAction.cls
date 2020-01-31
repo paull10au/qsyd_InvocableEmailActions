@@ -113,7 +113,7 @@ global with sharing class qsyd_InvocableEmailTemplateAction extends qsyd_Invocab
         @InvocableVariable(label='Treat Bodies as Template?' description='The subject, plain text, and HTML text bodies of the email are treated as template data. The merge fields are resolved using the renderEmailTemplate method.' required=false)
         global Boolean treatBodiesAsTemplate;
 
-        @InvocableVariable(label='Treat Target Object as Recipient?' description=' If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email.' required=false)
+        @InvocableVariable(label='Treat Target Object as Recipient?' description='If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email.' required=false)
         global Boolean treatTargetObjectAsRecipient;
 
         @InvocableVariable(label='Throw an Exception for Send Errors?' description='Throw an exception containing any send results errors. The default is true.' required=false)
