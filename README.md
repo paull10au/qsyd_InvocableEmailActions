@@ -232,13 +232,13 @@ Read the [FAQs][wiki-faqs-url] answer common questions.
 ## [FAQs][wiki-faqs-url]
 
 #### Does it work in Communities?
-> Yes, but with the following caveats/Yes/No/NA
+> Yes
 
 #### Does it work in Mobile?
-> Yes, but with the following caveats/Yes/No/NA
+> Yes
 
 #### Does it work with Person Accounts?
-> Yes, but with the following caveats/Yes/No/NA
+> Yes
 
 #### Does it support Internationalisation (i18n)?
 > Yes, labels can be translated using [Salesforce Translation Workbench](https://help.salesforce.com/articleView?id=workbench_overview.htm&type=5)
