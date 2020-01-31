@@ -16,26 +16,36 @@ public with sharing class qsyd_InvocableEmailActionTest {
     private static final String ACCOUNT = 'Account';
     private static final String CONTACT = 'Contact';
     private static final String USER = 'User';
-
-    private static final String CONTACT_EXAMPLE = '0034P00002PYwXAQA1';
-    private static final String CONTENTVERSION_EXAMPLES = '0684P00000ARbLNQA1,0684P00000ARbLIQA1';
-    private static final String CASE_EXAMPLE = '5004P00000XFXikQAH';
-    private static final String EMAIL_EXAMPLE = '02s4P00000lnXqBQAU';
     private static final String INREPLYTO_EXAMPLE = 'topic/2734@dsalesforce.com';
-    private static final String ORGWIDEEMAILADDRESS_EXAMPLE = '0D24P000002AHEMSA4';
+//    private static final String ORGWIDEEMAILADDRESS_EXAMPLE = '0D24P000002AHEMSA4';
 
     static Account testAccount;
+    static ContentVersion testContentVersion;
 
     @TestSetup
     private static void setupTestData() {
-        // Insert an account
+        // Account
         testAccount = new Account(Name = 'Test Account');
         INSERT testAccount;
+
+        // Content
+        testContentVersion = new ContentVersion(Title = 'Test Content', PathOnClient = 'TestContent.pdf', VersionData = Blob.valueOf('Test Content'), IsMajorVersion = true);
+        INSERT testContentVersion;
     }
 
     @IsTest
     private static void initialiseSetupTestData() {
+        testAccount = [
+                SELECT Id
+                FROM Account
+                LIMIT 1
+        ][0];
 
+        testContentVersion = [
+                SELECT Id
+                FROM ContentVersion
+                LIMIT 1
+        ][0];
     }
 
     @IsTest
@@ -55,8 +65,7 @@ public with sharing class qsyd_InvocableEmailActionTest {
         param.bodyPlainText = 'Plain text body';
         param.bodyHtml = '<html><body><strong>Rich text body</strong></body></html>';
         param.charSet = 'utf-8';
-        param.attachmentIds = CONTENTVERSION_EXAMPLES;
-        param.whatId = CASE_EXAMPLE;
+        param.attachmentIds = testContentVersion.Id;
         param.parentMessageIds = INREPLYTO_EXAMPLE;
         param.orgWideEmailAddress = '';
         param.emailOptOutPolicy = 'FILTER';

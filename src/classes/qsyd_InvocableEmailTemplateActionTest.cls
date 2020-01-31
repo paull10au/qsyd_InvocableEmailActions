@@ -18,28 +18,42 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
     private static final String CONTACT = 'Contact';
     private static final String USER = 'User';
 
-    private static final String CONTACT_EXAMPLE = '0034P00002PYwXAQA1';
-
-    static EmailTemplate emailTemplate;
+    static EmailTemplate testEmailTemplate;
+    static Contact testContact;
 
     @TestSetup
     private static void setupTestData() {
+        User runningUser = [
+                SELECT id
+                FROM User
+                WHERE Id = :UserInfo.getUserId()
+        ];
 
-        // Insert an email template
-        emailTemplate = new EmailTemplate(Body = 'Template body', Description = 'Test template', DeveloperName = 'TestTemplate', Name = 'Test Template', FolderId = UserInfo.getUserId(), TemplateType = 'text', IsActive = True);
-        INSERT emailTemplate;
+        System.runAs (runningUser) {
+            // Email Template
+            testEmailTemplate = new EmailTemplate(Body = 'Template body', Description = 'Test template', DeveloperName = 'TestTemplate', Name = 'Test Template', FolderId = UserInfo.getUserId(), TemplateType = 'text', IsActive = True);
+            INSERT testEmailTemplate;
 
-        System.debug('emailTemplate: ' + emailTemplate.Id);
+            // Contact
+            testContact = new Contact(FirstName = 'Paul', LastName = 'Lucas', Email = 'plucas@salesforce.com');
+            INSERT testContact;
+        }
     }
 
     @IsTest
     private static void initialiseSetupTestData() {
-//        emailTemplate = [
-//                SELECT Id
-//                FROM EmailTemplate
-//                WHERE DeveloperName = 'TestTemplate'
-//                LIMIT 1
-//        ][0];
+        testContact = [
+                SELECT Id
+                FROM Contact
+                LIMIT 1
+        ][0];
+
+        testEmailTemplate = [
+                SELECT Id
+                FROM EmailTemplate
+                WHERE DeveloperName = 'TestTemplate'
+                LIMIT 1
+        ][0];
     }
 
     @IsTest
@@ -53,7 +67,7 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
 
         param.toAddress = 'plucas@salesforce.com';
         param.emailTemplate = 'Test Template';
-        param.targetObjectId = CONTACT_EXAMPLE;
+        param.targetObjectId = testContact.Id;
         params.add(param);
 
         List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
@@ -77,7 +91,7 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
 
         param.toAddress = 'plucas';
         param.emailTemplate = 'Test Template';
-        param.targetObjectId = CONTACT_EXAMPLE;
+        param.targetObjectId = testContact.Id;
         params.add(param);
 
         try {
@@ -104,7 +118,7 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
 
         param.toAddress = 'plucas@salesforce.com';
         param.emailTemplate = '';
-        param.targetObjectId = CONTACT_EXAMPLE;
+        param.targetObjectId = testContact.Id;
         params.add(param);
 
         try {
@@ -131,7 +145,7 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
 
         param.toAddress = 'plucas@salesforce.com';
         param.emailTemplate = 'Incorrect Template';
-        param.targetObjectId = CONTACT_EXAMPLE;
+        param.targetObjectId = testContact.Id;
         params.add(param);
 
         try {
