@@ -23,7 +23,10 @@
 </h4>
 
 <p align="center">
-  <img alt="Demo" src="images/demo.gif">
+	<video width="320" height="240" controls>
+		<source src="images/qsyd_InvocableEmailActions.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
 </p>
 
 ---
@@ -147,93 +150,14 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 ```
 \* Refer to the [test class](https://github.com/paull10au/qsyd_InvocableEmailActions/blob/f595d2818fbd2201e6b7e3341cf03fc4054e9bbb/src/classes/qsyd_InvocableEmailActionTest.cls#L43) for complete working examples.
 
-#### Supported options
-
-<table>
-	<tr>
-		<th>Option</th>
-	  	<th>Description</th>
-	</tr>
-  	<tr>
-		<td><i>toAddress</i></td>
-		<td>Recipient To Addresses, Max 100, Comma Delimited.</td>
-	</tr>
-	<tr>
-		<td><i>ccAddress</i></td>
-		<td>Recipient Cc Addresses, Max 25, Comma Delimited.</td>
-	</tr>
-	<tr>
-		<td><i>bccAddress</i></td>
-		<td>Recipient Bcc Addresses, Max 25, Comma Delimited.</td>
-	</tr>
-	<tr>
-		<td><i>emailTemplate</i></td>
-		<td>Email Template Id or Name.</td>
-	</tr>
-	<tr>
-		<td><i>subject</i></td>
-		<td>Email Subject.</td>
-	</tr>
-	<tr>
-		<td><i>bodyPlainText</i></td>
-		<td>Email Plain Text Body.</td>
-	</tr>
-	<tr>
-		<td><i>bodyHtml</i></td>
-		<td>Email Html Body.</td>
-	</tr>
-	<tr>
-		<td><i>charSet</i></td>
-		<td>Email Character Set.</td>
-	</tr>
-	<tr>
-		<td><i>Attachment Ids</i></td>
-		<td>Comma delimited list of ids of Document, ContentVersion, or Attachment.</td>
-	</tr>
-	<tr>
-		<td><i>targetObjectId</i></td>
-		<td>The Id of the contact, lead, or user to which the email will be sent.</td>
-	</tr>
-	<tr>
-		<td><i>whatId</i></td>
-		<td>If you specify a contact for the targetObjectId field, you can specify an optional whatId as well. Must be either a Account, Asset, Campaign, Case, Contract, Opportunity, Order, Product, Solution, Custom</td>
-	</tr>
-	<tr>
-		<td><i>parentMessageIds</i></td>
-		<td>This field identifies the email or emails to which this email is a reply (parent emails).</td>
-	</tr>
-	<tr>
-		<td><i>emailOptOutPolicy</i></td>
-		<td>If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call.</td>
-	</tr>
-	<tr>
-		<td><i>orgWideEmailAddress</i></td>
-		<td>The associated org wide email address set up in Organization-Wide Addresses.</td>
-	</tr>
-	<tr>
-		<td><i>saveAsActivity</i></td>
-		<td>This argument only applies if the recipient list is based on targetObjectId or targetObjectIds. If HTML email tracking is enabled for the organization, you will be able to track open rates.</td>
-	</tr>
-	<tr>
-		<td><i>useSignature</i></td>
-		<td>Indicates whether the email includes an email signature if the user has one configured.</td>
-	</tr>
-	<tr>
-		<td><i>treatBodiesAsTemplate</i></td>
-		<td>The subject, plain text, and HTML text bodies of the email are treated as template data. The merge fields are resolved using the renderEmailTemplate method.</td>
-	</tr>
-	<tr>
-		<td><i>treatTargetObjectAsRecipient</i></td>
-		<td>If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email.</td>
-	</tr>
-	<tr>
-		<td><i>throwExceptionForSendErrors</i></td>
-		<td>Throw an exception containing any send results errors. The default is true.</td>
-	</tr>
-</table>
-
 
 ### [QSyd - Invocable Email Template Action][github-qsyd_InvocableEmailTemplateAction-url]
+
+#### Example lightning email template:
+
+<div>
+	<img align="center" src="https://github.com/paull10au/qsyd_InvocableEmailActions/blob/master/images/lightning_email_template.png">
+</div>
 
 #### A simple use case for Process Builder:
 
@@ -276,6 +200,91 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 
 \* Refer to the [test class](https://github.com/paull10au/qsyd_InvocableEmailActions/blob/2825b3e4245158ec0b14754485b37362ba9234a5/src/classes/qsyd_InvocableEmailTemplateActionTest.cls#L46) for complete working examples.
 
+### Supported options
+
+<table>
+	<tr>
+		<th>Option</th>
+	  	<th>Description</th>
+	</tr>
+  	<tr>
+		<td><i>Recipient To Addresses</i></td>
+		<td>Recipient To Addresses, Max 100, Comma Delimited.</td>
+	</tr>
+	<tr>
+		<td><i>Recipient Cc Addresses</i></td>
+		<td>Recipient Cc Addresses, Max 25, Comma Delimited.</td>
+	</tr>
+	<tr>
+		<td><i>Recipient Bcc Addresses</i></td>
+		<td>Recipient Bcc Addresses, Max 25, Comma Delimited.</td>
+	</tr>
+	<tr>
+		<td><i>Email Template Id or Name</i></td>
+		<td>Id, Name, or Developer Name of Email Template.</td>
+	</tr>
+	<tr>
+		<td><i>Email Subject</i></td>
+		<td>Email Subject.</td>
+	</tr>
+	<tr>
+		<td><i>Email Plain Text Body</i></td>
+		<td>Email Plain Text Body.</td>
+	</tr>
+	<tr>
+		<td><i>Email Html Body</i></td>
+		<td>Email Html Body.</td>
+	</tr>
+	<tr>
+		<td><i>Email Character Set</i></td>
+		<td>Email Character Set.</td>
+	</tr>
+	<tr>
+		<td><i>Attachment Ids</i></td>
+		<td>Comma delimited list of ids of Document, ContentVersion, or Attachment.</td>
+	</tr>
+	<tr>
+		<td><i>Target Object Id - Contact, Lead or User Id</i></td>
+		<td>The Id of the contact, lead, or user to which the email will be sent.</td>
+	</tr>
+	<tr>
+		<td><i>What Id</i></td>
+		<td>If you specify a contact for the targetObjectId field, you can specify an optional whatId as well. Must be either a Account, Asset, Campaign, Case, Contract, Opportunity, Order, Product, Solution, Custom</td>
+	</tr>
+	<tr>
+		<td><i>Parent Message Id</i></td>
+		<td>This field identifies the email or emails to which this email is a reply (parent emails).</td>
+	</tr>
+	<tr>
+		<td><i>Email Opt Out Policy</i></td>
+		<td>If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call.</td>
+	</tr>
+	<tr>
+		<td><i>Org Wide Email Address</i></td>
+		<td>The associated org wide email address set up in Organization-Wide Addresses.</td>
+	</tr>
+	<tr>
+		<td><i>Save as Activity?</i></td>
+		<td>This argument only applies if the recipient list is based on targetObjectId or targetObjectIds. If HTML email tracking is enabled for the organization, you will be able to track open rates.</td>
+	</tr>
+	<tr>
+		<td><i>Use Signature?</i></td>
+		<td>Indicates whether the email includes an email signature if the user has one configured.</td>
+	</tr>
+	<tr>
+		<td><i>Treat Bodies as Template?</i></td>
+		<td>The subject, plain text, and HTML text bodies of the email are treated as template data. The merge fields are resolved using the renderEmailTemplate method.</td>
+	</tr>
+	<tr>
+		<td><i>Treat Target Object as Recipient?</i></td>
+		<td>If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email.</td>
+	</tr>
+	<tr>
+		<td><i>Throw an Exception for Send Errors?</i></td>
+		<td>Throw an exception containing any send results errors. The default is true.</td>
+	</tr>
+</table>
+
 ## [Documentation][wiki-url]
 
 Read the [wiki][wiki-url] for documentation on Invocable Email Actions.
@@ -300,7 +309,7 @@ Read the [FAQs][wiki-faqs-url] answer common questions.
 #### Others?
 
 
-## Contributing
+## [Contributing](/CONTRIBUTING.md)
 
 See the list of [Contributors][contributors-url] who participated in this project.
 

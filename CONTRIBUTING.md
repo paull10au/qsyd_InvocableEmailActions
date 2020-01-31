@@ -105,12 +105,48 @@ the reviewer(s) may ask you to complete additional design work, tests, or other 
 
 ## Styleguides
 
+### Markup Styleguide
+
+- Include the following boilerplate at the top of every html file:
+
+```HTML
+<!--
+    Author:         Paul Lucas
+    Company:        Salesforce
+    Description:    qsyd_Test - Display a Hello World message.
+    Date:           25-Jan-2020
+
+    History:
+    When            Who                 What
+	
+    TODO:
+
+-->
+```
+
 ### JavaScript Styleguide
 
 All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.com/salesforce/eslint-config-lwc). Please install the [ESLint LWC Plugin](https://github.com/salesforce/eslint-plugin-lwc) to ensure a baseline for valid consistent code.
 
 - Prefer higher order functions over primitive forms of iterators, eg. (Array methods)[https://www.w3schools.com/jsref/jsref_obj_array.asp]
 
+- Include the following boilerplate at the top of every js file:
+
+```Javascript
+/**
+ Author:         Paul Lucas
+ Company:        Salesforce
+ Description:    qsyd_Test - Display a Hello World message.
+ Date:           25-Jan-2020
+
+ History:
+ When           Who                 What
+
+ TODO:
+
+ */
+ ```
+ 
 ### Apex Styleguide
 
 - Include the following boilerplate at the top of every file:
@@ -151,7 +187,7 @@ ESLint addresses a majority of coding best practices, most of which can conceptu
 - Indents should be **tabs**, based on either **2 or 4 spaces** and should stay consistent.
 - Variables should be declared at the start of each block.
 - Always include **curly braces** when writing conditional block statements.
-- Prefer a **ternary operator** over a single conditional statement (if-else).
+- Prefer a **ternary operator** over a single conditional assignment statement (if-else).
 - Prefer a **switch or case** statement over multiple (> 2) if-else statements.
 - Prefer writing self-describing code over inline comments.
 
