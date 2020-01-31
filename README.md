@@ -23,7 +23,7 @@
 </h4>
 
 <p align="center">
-	<img align="right" width="150" src="images/qsyd_InvocableEmailActions.gif">
+	<img src="images/qsyd_InvocableEmailActions.gif">
 </p>
 
 ---
