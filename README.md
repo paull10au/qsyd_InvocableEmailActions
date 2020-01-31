@@ -306,7 +306,7 @@ Read the [FAQs][wiki-faqs-url] answer common questions.
 #### Others?
 
 
-## Contributing
+## [Contributing](/CONTRIBUTING.md)
 
 See the list of [Contributors][contributors-url] who participated in this project.
 
