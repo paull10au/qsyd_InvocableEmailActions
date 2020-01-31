@@ -1,5 +1,4 @@
 /**
- *      
      Author:         Paul Lucas
      Company:        Salesforce
      Description:    qsyd_InvocableEmailActionTest

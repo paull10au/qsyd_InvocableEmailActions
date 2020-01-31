@@ -1,5 +1,4 @@
 /**
- *      
      Author:        Paul Lucas
      Company:       Salesforce
      Description:   qsyd_InvocableEmailTemplateAction - Lightning Flow and Process Builder invocable action calling the Messaging.sendEmail API enabling a template based messages.
