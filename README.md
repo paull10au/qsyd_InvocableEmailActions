@@ -23,10 +23,7 @@
 </h4>
 
 <p align="center">
-	<video width="320" height="240" controls>
-		<source src="images/qsyd_InvocableEmailActions.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
+	<img align="right" width="150" src="images/qsyd_InvocableEmailActions.gif">
 </p>
 
 ---
