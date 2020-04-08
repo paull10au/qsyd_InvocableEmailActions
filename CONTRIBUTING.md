@@ -134,15 +134,15 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
 
 ```Javascript
 /**
- Author:         Paul Lucas
- Company:        Salesforce
- Description:    qsyd_Test - Display a Hello World message.
- Date:           25-Jan-2020
+    Author:         Paul Lucas
+    Company:        Salesforce
+    Description:    qsyd_Test - Display a Hello World message.
+    Date:           25-Jan-2020
 
- History:
- When           Who                 What
+    History:
+    When           Who                 What
 
- TODO:
+    TODO:
 
  */
  ```
@@ -153,7 +153,6 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
 
 ```Apex
 /**
- *      
      Author:        Paul Lucas
      Company:       Salesforce
      Description:   qsyd_InvocableEmailTemplateAction - Lightning Flow and Process Builder invocable action calling the Messaging.sendEmail API enabling a template based messages.
