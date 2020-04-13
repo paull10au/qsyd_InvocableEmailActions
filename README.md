@@ -60,6 +60,9 @@ Deploy the actions:
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
 
+**Deploy to SFDX Scratch Org:**
+[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com)
+
 1. Click the "Deploy to Salesforce" button.
 2. Select the Org Type (Production / Sandbox).
 3. Login to your Org.
