@@ -65,7 +65,7 @@ Deploy the actions:
        src="https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg">
 </a>
 
-1. Click the "Deploy to Salesforce" button.
+1. Click one of the "Deploy buttons".
 2. Select the Org Type (Production / Sandbox).
 3. Login to your Org.
 4. Deploy the code.
