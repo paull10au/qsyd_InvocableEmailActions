@@ -169,15 +169,15 @@ const Card = {
 ```Javascript
 function getColorOfTheSky(color = "blue") { ... }
 ```
-- The fewer function arguments the better. If excessive arguments are required, prefer passing an object to maintain readability:
+- The fewer function arguments the better. The more arguments in a signature, the more abstruse a call becomes. If excessive arguments are required, prefer passing an object to maintain readability:
 ```Javascript
 // Bad
-function createPayload(url, method, body, headers) { ... }
+function makeCallout(url, method, body, headers) { ... }
 
 // Good
-function createPayload({ url, method, body, headers }) { ... }
+function makeCallout({ url, method, body, headers }) { ... }
 
-createPayload({
+makeCallout({
 	url: "https://endpoint", 
 	method: "POST", 
 	body: JSON.stringify(data),
@@ -186,6 +186,12 @@ createPayload({
   	} 
 });
 ```
+- Functions should do 1 and only 1 thing - [Single Responsability Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) and they should be verbose about what they do:
+```Javascript
+function getPreferredDestinationUrl() { ... }
+```
+- Similarly, prefer function overloads versus passing flags as arguments:
+- Use getters and setters
 
 ### Apex Styleguide
 
@@ -228,7 +234,10 @@ ESLint addresses a majority of coding best practices, most of which can conceptu
 - Always include **curly braces** when writing conditional block statements.
 - Prefer a **ternary operator** over a single conditional assignment statement (if-else).
 - Prefer a **switch or case** statement over multiple (> 2) if-else statements.
-- Prefer writing self-describing code over inline comments.
+- Prefer writing self-describing code over inline comments. Only comment business logic complexity.
+- Handle errors and notify whoever needs to be notified. Logging to console is not considered "handling" the error.
+- Avoid an inline changelogs. Use the VCS history instead.
+
 
 > Strive to incorporate the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles when developing in either Object Oriented or Functional programming languages.
 
