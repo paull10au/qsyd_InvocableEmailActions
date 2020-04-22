@@ -145,11 +145,11 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
  */
  ```
 - Prefer higher order functions over primitive forms of iterators, eg. [Array methods](https://www.w3schools.com/jsref/jsref_obj_array.asp)
-- Use searchable names, ie. use constants
+- Use searchable names, ie. use constants:
 ```Javascript
-const SECOONDS_IN_A_DAY = 86400;
+const SECONDS_IN_A_DAY = 86400;
 ```
-- Avoid redundant contextual verbage
+- Avoid redundant contextual verbage:
 ```Javascript
 // Bad
 const Card = {
@@ -164,6 +164,27 @@ const Card = {
 	expiry: "01/25",
 	CVV: "547"
 };
+```
+- Use default arguments:
+```Javascript
+function getColorOfTheSky(color = "blue") { ... }
+```
+- The fewer function arguments the better. If excessive arguments are required, prefer passing an object to maintain readability:
+```Javascript
+// Bad
+function createPayload(url, method, body, headers) { ... }
+
+// Good
+function createPayload({ url, method, body, headers }) { ... }
+
+createPayload({
+	url: "https://endpoint", 
+	method: "POST", 
+	body: JSON.stringify(data),
+	headers: {
+	    "Content-Type": "application/json"
+  	} 
+});
 ```
 
 ### Apex Styleguide
