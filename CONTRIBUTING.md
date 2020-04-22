@@ -115,9 +115,6 @@ the reviewer(s) may ask you to complete additional design work, tests, or other 
     Company:        Salesforce
     Description:    qsyd_Test - Display a Hello World message.
     Date:           25-Jan-2020
-
-    History:
-    When            Who                 What
 	
     TODO:
 
@@ -136,9 +133,6 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
     Company:        Salesforce
     Description:    qsyd_Test - Display a Hello World message.
     Date:           25-Jan-2020
-
-    History:
-    When           Who                 What
 
     TODO:
 
@@ -209,8 +203,6 @@ function getPreferredDestinationUrl() { ... }
      Test Class:    qsyd_InvocableEmailTemplateActionTest
 
      Usage:         Refer to qsyd_InvocableEmailTemplateActionTest methods
-     History:
-     When           Who                 What
 
      TODO:
  */
