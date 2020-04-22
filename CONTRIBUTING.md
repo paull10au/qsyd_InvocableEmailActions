@@ -144,11 +144,26 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
 
  */
  ```
-- Prefer higher order functions over primitive forms of iterators, eg. (Array methods)[https://www.w3schools.com/jsref/jsref_obj_array.asp]
+- Prefer higher order functions over primitive forms of iterators, eg. [Array methods](https://www.w3schools.com/jsref/jsref_obj_array.asp)
 - Use searchable names, ie. use constants
-
 ```Javascript
 const SECOONDS_IN_A_DAY = 86400;
+```
+- Avoid redundant contextual verbage
+```Javascript
+// Bad
+const Card = {
+	cardNumber: "4111111111111111",
+	cardExpiry: "01/25",
+	cardCVV: "547"
+};
+
+// Good
+const Card = {
+	number: "4111111111111111",
+	expiry: "01/25",
+	CVV: "547"
+};
 ```
 
 ### Apex Styleguide
