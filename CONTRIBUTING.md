@@ -128,8 +128,6 @@ the reviewer(s) may ask you to complete additional design work, tests, or other 
 
 All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.com/salesforce/eslint-config-lwc). Please install the [ESLint LWC Plugin](https://github.com/salesforce/eslint-plugin-lwc) to ensure a baseline for valid consistent code.
 
-- Prefer higher order functions over primitive forms of iterators, eg. (Array methods)[https://www.w3schools.com/jsref/jsref_obj_array.asp]
-
 - Include the following boilerplate at the top of every js file:
 
 ```Javascript
@@ -146,7 +144,13 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
 
  */
  ```
- 
+- Prefer higher order functions over primitive forms of iterators, eg. (Array methods)[https://www.w3schools.com/jsref/jsref_obj_array.asp]
+- Use searchable names, ie. use constants
+
+```Javascript
+const SECOONDS_IN_A_DAY = 86400;
+```
+
 ### Apex Styleguide
 
 - Include the following boilerplate at the top of every file:
