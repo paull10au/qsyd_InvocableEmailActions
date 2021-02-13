@@ -115,9 +115,6 @@ the reviewer(s) may ask you to complete additional design work, tests, or other 
     Company:        Salesforce
     Description:    qsyd_Test - Display a Hello World message.
     Date:           25-Jan-2020
-
-    History:
-    When            Who                 What
 	
     TODO:
 
@@ -128,32 +125,74 @@ the reviewer(s) may ask you to complete additional design work, tests, or other 
 
 All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.com/salesforce/eslint-config-lwc). Please install the [ESLint LWC Plugin](https://github.com/salesforce/eslint-plugin-lwc) to ensure a baseline for valid consistent code.
 
-- Prefer higher order functions over primitive forms of iterators, eg. (Array methods)[https://www.w3schools.com/jsref/jsref_obj_array.asp]
-
 - Include the following boilerplate at the top of every js file:
 
 ```Javascript
 /**
- Author:         Paul Lucas
- Company:        Salesforce
- Description:    qsyd_Test - Display a Hello World message.
- Date:           25-Jan-2020
+    Author:         Paul Lucas
+    Company:        Salesforce
+    Description:    qsyd_Test - Display a Hello World message.
+    Date:           25-Jan-2020
 
- History:
- When           Who                 What
-
- TODO:
+    TODO:
 
  */
  ```
- 
+- Prefer higher order functions over primitive forms of iterators, eg. [Array methods](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+- Use searchable names, ie. use constants:
+```Javascript
+const SECONDS_IN_A_DAY = 86400;
+```
+- Avoid redundant contextual verbage:
+```Javascript
+// Bad
+const Card = {
+	cardNumber: "4111111111111111",
+	cardExpiry: "01/25",
+	cardCVV: "547"
+};
+
+// Good
+const Card = {
+	number: "4111111111111111",
+	expiry: "01/25",
+	CVV: "547"
+};
+```
+- Use default arguments:
+```Javascript
+function getColorOfTheSky(color = "blue") { ... }
+```
+- The fewer function arguments the better. The more arguments in a signature, the more abstruse a call becomes. If excessive arguments are required, prefer passing an object to maintain readability:
+```Javascript
+// Bad
+function makeCallout(url, method, body, headers) { ... }
+
+// Good
+function makeCallout({ url, method, body, headers }) { ... }
+
+makeCallout({
+	url: "https://endpoint", 
+	method: "POST", 
+	body: JSON.stringify(data),
+	headers: {
+	    "Content-Type": "application/json"
+  	} 
+});
+```
+- Functions should do 1 and only 1 thing - [Single Responsability Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) and they should be verbose about what they do:
+```Javascript
+function getPreferredDestinationUrl() { ... }
+```
+- Similarly, prefer function overloads versus passing flags as arguments:
+- Use getters and setters
+
 ### Apex Styleguide
 
 - Include the following boilerplate at the top of every file:
 
 ```Apex
 /**
- *      
      Author:        Paul Lucas
      Company:       Salesforce
      Description:   qsyd_InvocableEmailTemplateAction - Lightning Flow and Process Builder invocable action calling the Messaging.sendEmail API enabling a template based messages.
@@ -164,8 +203,6 @@ All JavaScript must adhere to our [ESLint for LWC Style Rules](https://github.co
      Test Class:    qsyd_InvocableEmailTemplateActionTest
 
      Usage:         Refer to qsyd_InvocableEmailTemplateActionTest methods
-     History:
-     When           Who                 What
 
      TODO:
  */
@@ -189,7 +226,10 @@ ESLint addresses a majority of coding best practices, most of which can conceptu
 - Always include **curly braces** when writing conditional block statements.
 - Prefer a **ternary operator** over a single conditional assignment statement (if-else).
 - Prefer a **switch or case** statement over multiple (> 2) if-else statements.
-- Prefer writing self-describing code over inline comments.
+- Prefer writing self-describing code over inline comments. Only comment business logic complexity.
+- Handle errors and notify whoever needs to be notified. Logging to console is not considered "handling" the error.
+- Avoid an inline changelogs. Use the VCS history instead.
+
 
 > Strive to incorporate the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles when developing in either Object Oriented or Functional programming languages.
 

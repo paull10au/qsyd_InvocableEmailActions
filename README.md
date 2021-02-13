@@ -60,7 +60,12 @@ Deploy the actions:
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
 
-1. Click the "Deploy to Salesforce" button.
+<a style="margin-right: 40%;" href="https://deploy-to-sfdx.com">
+  <img align="right" alt="Deploy using SFDX"
+       src="https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg">
+</a>
+
+1. Click one of the "Deploy Buttons".
 2. Select the Org Type (Production / Sandbox).
 3. Login to your Org.
 4. Deploy the code.
@@ -232,13 +237,13 @@ Read the [FAQs][wiki-faqs-url] answer common questions.
 ## [FAQs][wiki-faqs-url]
 
 #### Does it work in Communities?
-> Yes, but with the following caveats/Yes/No/NA
+> Yes
 
 #### Does it work in Mobile?
-> Yes, but with the following caveats/Yes/No/NA
+> Yes
 
 #### Does it work with Person Accounts?
-> Yes, but with the following caveats/Yes/No/NA
+> Yes
 
 #### Does it support Internationalisation (i18n)?
 > Yes, labels can be translated using [Salesforce Translation Workbench](https://help.salesforce.com/articleView?id=workbench_overview.htm&type=5)
