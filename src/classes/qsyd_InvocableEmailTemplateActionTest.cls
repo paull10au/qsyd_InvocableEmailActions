@@ -20,6 +20,7 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
 
     static EmailTemplate testEmailTemplate;
     static Contact testContact;
+    static Account testAccount;
 
     @TestSetup
     private static void setupTestData() {
@@ -37,6 +38,10 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
             // Contact
             testContact = new Contact(FirstName = 'Paul', LastName = 'Lucas', Email = 'plucas@salesforce.com');
             INSERT testContact;
+
+            // Account
+            testAccount = new Account(Name = 'Test Account');
+            INSERT testAccount;
         }
     }
 
@@ -68,6 +73,7 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
         param.toAddress = 'plucas@salesforce.com';
         param.emailTemplate = 'Test Template';
         param.targetObjectId = testContact.Id;
+
         params.add(param);
 
         List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);

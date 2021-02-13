@@ -2,7 +2,7 @@
  *      
      Author:        Paul Lucas
      Company:       Salesforce
-     Description:   qsyd_InvocableEmailBase - Base class for invocable methods wanting to calling the Messaging.sendEmail API
+     @description   qsyd_InvocableEmailBase - Base class for invocable methods wanting to calling the Messaging.sendEmail API
 
      Date:          28-Apr-2018
 
@@ -15,9 +15,7 @@
      When           Who                 What
 
  */
-
 global virtual with sharing class qsyd_InvocableEmailBase {
-
     /**
      * Private members
      */
@@ -25,13 +23,14 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     private static Messaging.SingleEmailMessage emailMessage;
     private static Boolean throwExceptionForSendErrors = true;
 
-    // Statically initialized logic
+    // Statically initialized
     static {
     }
 
     /**
-     * Instantiate a new email message
+     * @description Instantiate a new email message
      *
+     * @param throwException
      */
     public static void newEmailMessage(Boolean throwException) {
         emailMessage = new Messaging.SingleEmailMessage();
@@ -40,10 +39,10 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * A list of email addresses or object IDs of the contacts, leads, and users you’re sending the email to.
+     * @description A list of email addresses or object IDs of the contacts, leads, and users you’re sending the email to.
      * The maximum number of email addresses allowed is 100.
      *
-     * @param toAddresses
+     * @param toAddresses To address
      */
     public static void setToAddresses(List<String> toAddresses) {
         toAddresses = normalizeList(toAddresses);
@@ -54,7 +53,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * A list of carbon copy (CC) addresses or object IDs of the contacts, leads, and users you’re sending the email to.
+     * @description A list of carbon copy (CC) addresses or object IDs of the contacts, leads, and users you’re sending the email to.
      * The maximum allowed is 25.
      *
      * @param ccAddresses
@@ -68,7 +67,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * A list of blind carbon copy (BCC) addresses or object IDs of the contacts, leads, and users you’re sending the email to.
+     * @description A list of blind carbon copy (BCC) addresses or object IDs of the contacts, leads, and users you’re sending the email to.
      * The maximum allowed is 25.
      *
      * @param bccAddresses
@@ -82,7 +81,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * The email subject line. If you are using an email template, the subject line of the template overrides this value.
+     * @description The email subject line. If you are using an email template, the subject line of the template overrides this value.
      *
      * @param subject
      */
@@ -93,7 +92,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * The text version of the email, specified by the sender. You must specify a value for setTemplateId, setHtmlBody,
+     * @description The text version of the email, specified by the sender. You must specify a value for setTemplateId, setHtmlBody,
      * or setPlainTextBody. Or, you can define both setHtmlBody and setPlainTextBody.
      *
      * @param plainTextBody
@@ -105,7 +104,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * The HTML version of the email, specified by the sender. The value is encoded according to the specification associated
+     * @description The HTML version of the email, specified by the sender. The value is encoded according to the specification associated
      * with the organization. You must specify a value for setTemplateId, setHtmlBody, or setPlainTextBody.
      * Or, you can define both setHtmlBody and setPlainTextBody.
      *
@@ -118,7 +117,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * The character set for the email. If this value is null, the user's default value is used.
+     * @description The character set for the email. If this value is null, the user's default value is used.
      *
      * @param characterSet
      */
@@ -129,7 +128,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Array of IDs of Document, ContentVersion, or Attachment items to attach to the email.
+     * @description Array of IDs of Document, ContentVersion, or Attachment items to attach to the email.
      *
      * @param ids
      */
@@ -140,7 +139,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Array containing the file names of the binary and text files you want to attach to the email.
+     * @description Array containing the file names of the binary and text files you want to attach to the email.
      *
      * @param fileNames
      */
@@ -151,7 +150,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * The References field of the outgoing email. Identifies an email thread. Contains the parent emails' References and message IDs, and possibly the In-Reply-To fields.
+     * @description The References field of the outgoing email. Identifies an email thread. Contains the parent emails' References and message IDs, and possibly the In-Reply-To fields.
      *
      * @param references
      */
@@ -162,7 +161,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Sets the optional emailOptOutPolicy. If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call.
+     * @description Sets the optional emailOptOutPolicy. If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call.
      * If you add recipients by their email addresses, the opt-out settings for those recipients aren’t checked and those recipients always receive the email.
      *
      * Possible values of the emailOptOutPolicy parameter are:
@@ -181,7 +180,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Sets the optional In-Reply-To field of the outgoing email. This field identifies the email or emails to which this email is a reply (parent emails).
+     * @description Sets the optional In-Reply-To field of the outgoing email. This field identifies the email or emails to which this email is a reply (parent emails).
      *
      * @param parentIds
      */
@@ -192,7 +191,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Sets the optional organization-wide email address associated with the outgoing email. The object's DisplayName field cannot be set if the setSenderDisplayName field is already set.
+     * @description Sets the optional organization-wide email address associated with the outgoing email. The object's DisplayName field cannot be set if the setSenderDisplayName field is already set.
      *
      * @param emailAddressId
      */
@@ -204,7 +203,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Sets the optional organization-wide email address associated with the outgoing email. The object's DisplayName field cannot be set if the setSenderDisplayName field is already set.
+     * @description Sets the optional organization-wide email address associated with the outgoing email. The object's DisplayName field cannot be set if the setSenderDisplayName field is already set.
      *
      * @param emailAddressId
      */
@@ -212,14 +211,14 @@ global virtual with sharing class qsyd_InvocableEmailBase {
         Id emailAddressId2;
 
         if (!String.isBlank(emailAddressId) &&
-                emailAddressId.trim() instanceOf Id) {
+                emailAddressId.trim() instanceof Id) {
             emailAddressId2 = Id.valueOf(emailAddressId);
             setOrgWideEmailAddressId(emailAddressId2);
         }
     }
 
     /**
-     * If set to true, the subject, plain text, and HTML text bodies of the email are treated as template data.
+     * @description If set to true, the subject, plain text, and HTML text bodies of the email are treated as template data.
      * The merge fields are resolved using the renderEmailTemplate method.
      *
      * Default is false.
@@ -233,7 +232,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email.
+     * @description If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email.
      * If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email.
      *
      * Default is true.
@@ -247,7 +246,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Required if using a template, optional otherwise. The ID of the template used to create the email.
+     * @description Required if using a template, optional otherwise. The ID of the template used to create the email.
      *
      * @param emailTemplateId
      */
@@ -258,7 +257,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Required if using a template, optional otherwise. The ID of the contact, lead, or user to which the email will be sent.
+     * @description Required if using a template, optional otherwise. The ID of the contact, lead, or user to which the email will be sent.
      * The ID you specify sets the context and ensures that merge fields in the template contain the correct data.
      *
      * @param targetObjectId
@@ -270,7 +269,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * If you specify a contact for the targetObjectId field, you can specify an optional whatId as well.
+     * @description If you specify a contact for the targetObjectId field, you can specify an optional whatId as well.
      * This helps to further ensure that merge fields in the template contain the correct data.
      *
      * @param whatId
@@ -282,7 +281,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * This argument only applies if the recipient list is based on targetObjectId or targetObjectIds.
+     * @description This argument only applies if the recipient list is based on targetObjectId or targetObjectIds.
      * If HTML email tracking is enabled for the organization, you will be able to track open rates.
      *
      * Default is true.
@@ -296,11 +295,11 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Indicates whether the email includes an email signature if the user has one configured.
+     * @description Indicates whether the email includes an email signature if the user has one configured.
      *
      * Default is true.
      *
-     * @param setUseSignature
+     * @param useSignature
      */
     public static void setUseSignature(Boolean useSignature) {
         if (useSignature != null) {
@@ -309,7 +308,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Send a list of tracked emails.
+     * @description Send a list of tracked emails.
      *
      * @param emailMessages
      * @param allOrNothing
@@ -370,9 +369,9 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Send a tracked email
+     * @description Send a tracked email
      *
-     * @param send
+     * @param allOrNothing
      *
      * @return
      */
@@ -381,9 +380,11 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * True if a recipient has been added
+     * @description True if a recipient has been added
      *
-     * @param hasRecipient
+     * @param message
+     *
+     * @return
      */
     private static Boolean hasRecipient(Messaging.SingleEmailMessage message) {
 
@@ -399,9 +400,11 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Remove duplicates and nulls from a list of strings
+     * @description Remove duplicates and nulls from a list of strings
      *
-     * @param normalizeList
+     * @param recordList
+     *
+     * @return
      */
     private static List<String> normalizeList(List<String> recordList) {
         Set<String> normalSet = new Set<String>(recordList);
@@ -413,9 +416,11 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * True if list is null or empty
+     * @description True if list is null or empty
      *
-     * @param listIsNullOrEmpty
+     * @param recordList
+     *
+     * @return
      */
     private static Boolean listIsNullOrEmpty(List<Object> recordList) {
 
@@ -427,14 +432,16 @@ global virtual with sharing class qsyd_InvocableEmailBase {
     }
 
     /**
-     * Send tracked email parameters
+     * @description Send tracked email parameters
      */
-    global abstract class InvocableEmailParamBase {
+    global abstract with sharing class InvocableEmailParamBase {
 
         /**
-         * Return a list from a comma delimited string
+         * @description Return a list from a comma delimited string
          *
-         * @param stringToList
+         * @param delimitedString
+         *
+         * @return
          */
         public List<String> stringToList(String delimitedString) {
 
@@ -442,7 +449,9 @@ global virtual with sharing class qsyd_InvocableEmailBase {
         }
 
         /**
-         * Return null if value is null or empty, else return trimmed value
+         * @description Return null if value is null or empty, else return trimmed value
+         *
+         * @param value
          *
          * @return
          */
@@ -452,9 +461,10 @@ global virtual with sharing class qsyd_InvocableEmailBase {
         }
 
         /**
-         * Throw exception if value is null or empty
+         * @description Throw exception if value is null or empty
          *
-         * @return
+         * @param value
+         * @param exceptionMessage
          */
         public void throwIfBlank(String value, String exceptionMessage) {
 
@@ -464,7 +474,9 @@ global virtual with sharing class qsyd_InvocableEmailBase {
         }
 
         /**
-         * Find the org wide email address id for a pre-verified email address
+         * @description Find the org wide email address id for a pre-verified email address
+         *
+         * @param emailAddress
          *
          * @return
          */
@@ -480,6 +492,7 @@ global virtual with sharing class qsyd_InvocableEmailBase {
                     SELECT Id
                     FROM OrgWideEmailAddress
                     WHERE Address = :emailAddress
+                    WITH SECURITY_ENFORCED
             ];
 
             // Error if no matching record was found
@@ -494,18 +507,21 @@ global virtual with sharing class qsyd_InvocableEmailBase {
         }
 
         /**
-         * True if "id" is in the form of objectType id
+         * @description True if "id" is in the form of objectType id
+         *
+         * @param id
+         * @param objectType
          *
          * @return
          */
         public Boolean isIdInstanceOfSObjectType(String id, SObjectType objectType) {
 
-            return (!String.isBlank(id) && id.trim() instanceOf Id && ((Id) id.trim()).getSobjectType() == objectType);
+            return (!String.isBlank(id) && id.trim() instanceof Id && ((Id) id.trim()).getSobjectType() == objectType);
         }
     }
 
     /**
-     * Invocable email exception
+     * @description Invocable email exception
      */
     global class InvocableEmailException extends Exception {
     }

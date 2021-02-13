@@ -17,9 +17,9 @@ public with sharing class qsyd_InvocableEmailActionTest {
     private static final String CONTACT = 'Contact';
     private static final String USER = 'User';
     private static final String INREPLYTO_EXAMPLE = 'topic/2734@dsalesforce.com';
-//    private static final String ORGWIDEEMAILADDRESS_EXAMPLE = '0D24P000002AHEMSA4';
 
     static Account testAccount;
+    static Case testCase;
     static ContentVersion testContentVersion;
 
     @TestSetup
@@ -27,6 +27,10 @@ public with sharing class qsyd_InvocableEmailActionTest {
         // Account
         testAccount = new Account(Name = 'Test Account');
         INSERT testAccount;
+
+        // Case
+        testCase = new Case(Subject = 'Test Case');
+        INSERT testCase;
 
         // Content
         testContentVersion = new ContentVersion(Title = 'Test Content', PathOnClient = 'TestContent.pdf', VersionData = Blob.valueOf('Test Content'), IsMajorVersion = true);
@@ -38,6 +42,12 @@ public with sharing class qsyd_InvocableEmailActionTest {
         testAccount = [
                 SELECT Id
                 FROM Account
+                LIMIT 1
+        ][0];
+
+        testCase = [
+                SELECT Id
+                FROM Case
                 LIMIT 1
         ][0];
 
@@ -66,6 +76,7 @@ public with sharing class qsyd_InvocableEmailActionTest {
         param.bodyHtml = '<html><body><strong>Rich text body</strong></body></html>';
         param.charSet = 'utf-8';
         param.attachmentIds = testContentVersion.Id;
+        param.whatId = testCase.Id;
         param.parentMessageIds = INREPLYTO_EXAMPLE;
         param.orgWideEmailAddress = '';
         param.emailOptOutPolicy = 'FILTER';

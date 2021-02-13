@@ -19,11 +19,11 @@ public with sharing class qsyd_InvocableEmailBaseTest {
     private static final String USER = 'User';
 
 
+//    private static final String CASE_EXAMPLE = '5004P00000XFXikQAH';
+//    private static final String EMAIL_EXAMPLE = '02s4P00000hQIpzQAG';
+//    private static final String ORGWIDEEMAILADDRESS_EXAMPLE = '0D24P000002AHEMSA4';
 
-    private static final String CASE_EXAMPLE = '5004P00000XFXikQAH';
-    private static final String EMAIL_EXAMPLE = '02s4P00000hQIpzQAG';
-    private static final String ORGWIDEEMAILADDRESS_EXAMPLE = '0D24P000002AHEMSA4';
-
+    static String orgWideEmailAddress;
 
     @TestSetup
     private static void setupTestData() {
@@ -32,6 +32,12 @@ public with sharing class qsyd_InvocableEmailBaseTest {
     @IsTest
     private static void initialiseSetupTestData() {
 
+        // Attempt to get an org wide email address
+        orgWideEmailAddress = [
+                SELECT Address
+                FROM OrgWideEmailAddress
+                LIMIT 1
+        ]?.Id;
     }
 
     @IsTest
@@ -44,7 +50,7 @@ public with sharing class qsyd_InvocableEmailBaseTest {
         qsyd_InvocableEmailBase.newEmailMessage(false);
         qsyd_InvocableEmailBase.setFileAttachments(new List<Messaging.EmailFileAttachment>());
         qsyd_InvocableEmailBase.setReferences('example email thread reference');
-        qsyd_InvocableEmailBase.setOrgWideEmailAddressId(ORGWIDEEMAILADDRESS_EXAMPLE);
+        qsyd_InvocableEmailBase.setOrgWideEmailAddressId(orgWideEmailAddress);
 
         Test.stopTest();
     }

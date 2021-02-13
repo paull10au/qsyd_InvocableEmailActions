@@ -20,6 +20,11 @@ public with sharing class qsyd_InvocableEmailResult {
     @AuraEnabled
     public Boolean success;
 
+    /**
+     * @description InvocableEmailResult class
+     *
+     * @param errors
+     */
     public qsyd_InvocableEmailResult(List<String> errors) {
 
         this.results = errors;
