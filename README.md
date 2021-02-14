@@ -125,7 +125,7 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 
         Test.startTest();
 
-        param.toAddress = 'plucas@salesforce.com';
+        param.toAddress = 'test_email@gmail.com';
         param.ccAddress = 'test_email@gmail.com';
         param.bccAddress = 'test_email@gmail.com';
         param.throwExceptionForSendErrors = true;
@@ -185,7 +185,7 @@ private static void given_requiredEmailParametersAreProvided_when_anEmailIsInsta
 
         Test.startTest();
 
-        param.toAddress = 'plucas@salesforce.com';
+        param.toAddress = 'test_email@gmail.com';
         param.emailTemplate = 'Test Template';
         param.targetObjectId = CONTACT_EXAMPLE;
         params.add(param);

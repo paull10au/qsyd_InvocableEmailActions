@@ -12,10 +12,6 @@
 
 @IsTest
 public with sharing class qsyd_InvocableEmailActionTest {
-
-    private static final String ACCOUNT = 'Account';
-    private static final String CONTACT = 'Contact';
-    private static final String USER = 'User';
     private static final String INREPLYTO_EXAMPLE = 'topic/2734@dsalesforce.com';
 
     static Account testAccount;
@@ -67,7 +63,7 @@ public with sharing class qsyd_InvocableEmailActionTest {
 
         Test.startTest();
 
-        param.toAddress = 'plucas@salesforce.com';
+        param.toAddress = 'test_email@gmail.com';
         param.ccAddress = 'test_email@gmail.com';
         param.bccAddress = 'test_email@gmail.com';
         param.throwExceptionForSendErrors = true;
@@ -83,7 +79,7 @@ public with sharing class qsyd_InvocableEmailActionTest {
         param.saveAsActivity = true;
         params.add(param);
 
-        List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailAction.sendEmail(params);
+        List<List<qsyd_InvocableEmailResult>> results = qsyd_InvocableEmailAction.sendEmail(params);
         Integer invocations = Limits.getEmailInvocations();
 
         // Email was sent
@@ -106,7 +102,7 @@ public with sharing class qsyd_InvocableEmailActionTest {
         params.add(param);
 
         try {
-            List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailAction.sendEmail(params);
+            List<List<qsyd_InvocableEmailResult>> results = qsyd_InvocableEmailAction.sendEmail(params);
         } catch (Exception e) {
             exceptions++;
         }
@@ -127,13 +123,13 @@ public with sharing class qsyd_InvocableEmailActionTest {
 
         Test.startTest();
 
-        param.toAddress = 'plucas@salesforce.com';
+        param.toAddress = 'test_email@gmail.com';
         param.bodyPlainText = 'plain text body';
         param.orgWideEmailAddress = 'non_existent_email@salesforce.com';
         params.add(param);
 
         try {
-            List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailAction.sendEmail(params);
+            List<List<qsyd_InvocableEmailResult>> results = qsyd_InvocableEmailAction.sendEmail(params);
 
             System.debug(results);
         } catch (Exception e) {
@@ -161,7 +157,7 @@ public with sharing class qsyd_InvocableEmailActionTest {
         params.add(param);
 
         try {
-            List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailAction.sendEmail(params);
+            List<List<qsyd_InvocableEmailResult>> results = qsyd_InvocableEmailAction.sendEmail(params);
         } catch (Exception e) {
             exceptions++;
         }

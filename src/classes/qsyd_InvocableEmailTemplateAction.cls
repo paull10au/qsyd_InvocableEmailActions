@@ -14,6 +14,12 @@
 
      TODO:
         - Use custom labels for error messages
+
+        For scheduled flows, assign the automated user the following permission set - 'QSyd - Invocable Email Actions'
+
+        INSERT new PermissionSetAssignment(
+        AssigneeId = [SELECT Id FROM User WHERE alias = 'autoproc'].Id,
+        PermissionSetId = '0PS2v0000057WWI' // QSyd - Invocable Email Actions
  */
 
 global with sharing class qsyd_InvocableEmailTemplateAction extends qsyd_InvocableEmailBase {
@@ -27,7 +33,7 @@ global with sharing class qsyd_InvocableEmailTemplateAction extends qsyd_Invocab
      *
      */
     @InvocableMethod(Label='QSyd - Invocable Email Template Action' Description='Invoke Messaging.sendEmail to send a template based message')
-    public static List<qsyd_InvocableEmailResult> sendEmail(List<InvocableEmailParam> params) {
+    public static List<List<qsyd_InvocableEmailResult>> sendEmail(List<InvocableEmailParam> params) {
         List<qsyd_InvocableEmailResult> results = new List<qsyd_InvocableEmailResult>();
 
         for (InvocableEmailParam invocableEmailParameters : params) {
@@ -63,7 +69,7 @@ global with sharing class qsyd_InvocableEmailTemplateAction extends qsyd_Invocab
             throw new InvocableEmailException('>>> qsyd_InvocableEmailTemplateAction.sendEmail failed with exception: ' + e.getMessage());
         }
 
-        return results;
+        return getResultsList(results);
     }
 
     /**

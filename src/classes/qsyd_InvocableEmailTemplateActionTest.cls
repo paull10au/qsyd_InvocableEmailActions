@@ -13,11 +13,6 @@
 
 @IsTest
 public with sharing class qsyd_InvocableEmailTemplateActionTest {
-
-    private static final String ACCOUNT = 'Account';
-    private static final String CONTACT = 'Contact';
-    private static final String USER = 'User';
-
     static EmailTemplate testEmailTemplate;
     static Contact testContact;
     static Account testAccount;
@@ -36,7 +31,7 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
             INSERT testEmailTemplate;
 
             // Contact
-            testContact = new Contact(FirstName = 'Paul', LastName = 'Lucas', Email = 'plucas@salesforce.com');
+            testContact = new Contact(FirstName = 'Paul', LastName = 'Lucas', Email = 'test_email@gmail.com');
             INSERT testContact;
 
             // Account
@@ -70,13 +65,13 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
 
         Test.startTest();
 
-        param.toAddress = 'plucas@salesforce.com';
+        param.toAddress = 'test_email@gmail.com';
         param.emailTemplate = 'Test Template';
         param.targetObjectId = testContact.Id;
 
         params.add(param);
 
-        List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
+        List<List<qsyd_InvocableEmailResult>> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
         Integer invocations = Limits.getEmailInvocations();
 
         // Assert an email was sent
@@ -101,7 +96,7 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
         params.add(param);
 
         try {
-            List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
+            List<List<qsyd_InvocableEmailResult>> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
         } catch (Exception e) {
             exceptions++;
         }
@@ -122,13 +117,13 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
 
         Test.startTest();
 
-        param.toAddress = 'plucas@salesforce.com';
+        param.toAddress = 'test_email@gmail.com';
         param.emailTemplate = '';
         param.targetObjectId = testContact.Id;
         params.add(param);
 
         try {
-            List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
+            List<List<qsyd_InvocableEmailResult>> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
         } catch (Exception e) {
             exceptions++;
         }
@@ -149,13 +144,13 @@ public with sharing class qsyd_InvocableEmailTemplateActionTest {
 
         Test.startTest();
 
-        param.toAddress = 'plucas@salesforce.com';
+        param.toAddress = 'test_email@gmail.com';
         param.emailTemplate = 'Incorrect Template';
         param.targetObjectId = testContact.Id;
         params.add(param);
 
         try {
-            List<qsyd_InvocableEmailResult> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
+            List<List<qsyd_InvocableEmailResult>> results = qsyd_InvocableEmailTemplateAction.sendEmail(params);
         } catch (Exception e) {
             exceptions++;
         }

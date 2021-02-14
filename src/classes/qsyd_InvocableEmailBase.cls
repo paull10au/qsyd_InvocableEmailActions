@@ -343,13 +343,11 @@ global virtual with sharing class qsyd_InvocableEmailBase {
                             // Aggregate error fields
                             errorMessage += error.getStatusCode() + ' : ' + error.getMessage() + ', ';
                         }
-
                         errors.add(errorMessage.trim().removeEnd(','));
                     }
+                    trackedEmailResults.add(new qsyd_InvocableEmailResult(errors));
                     i++;
                 }
-
-                trackedEmailResults.add(new qsyd_InvocableEmailResult(errors));
 
                 // Throw an exception containing the send errors rather than returning as output variables
                 if (throwExceptionForSendErrors && !trackedEmailResults[0].success) {
@@ -377,6 +375,25 @@ global virtual with sharing class qsyd_InvocableEmailBase {
      */
     public static List<qsyd_InvocableEmailResult> send(Boolean allOrNothing) {
         return send(emailMessages, allOrNothing);
+    }
+
+    /**
+     * @description Map results to a list of List<qsyd_InvocableEmailResult>
+     *
+     * @param results
+     *
+     * @return
+     */
+    public static List<List<qsyd_InvocableEmailResult>> getResultsList(List<qsyd_InvocableEmailResult> results) {
+        List<List<qsyd_InvocableEmailResult>> resultsList = new List<List<qsyd_InvocableEmailResult>>();
+
+        for (qsyd_InvocableEmailResult result : results) {
+            resultsList.add(new List<qsyd_InvocableEmailResult>{
+                    result
+            });
+        }
+
+        return resultsList;
     }
 
     /**
